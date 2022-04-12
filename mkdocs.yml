@@ -1,0 +1,6 @@
+site_name: whakamarie
+
+# Documentation and theme
+docs_dir: 'docs'
+theme:
+  name: 'material'
