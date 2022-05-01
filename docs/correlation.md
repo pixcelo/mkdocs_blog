@@ -15,7 +15,6 @@ Pythonで米国株の相関係数を求める方法をまとめる
     df = pd.read_csv("csv/NASDAQ_DLY_NDX_1D.csv")
     df["time"] = pd.to_datetime(df["time"], unit="s")
 
-## データを用意
 1.ナスダックと米国債10年金利のcsvデータをtradingViewからエクスポート<br/>
 2.pandasのデータフレームに読み込む
 
@@ -36,7 +35,7 @@ Pythonで米国株の相関係数を求める方法をまとめる
     plt.show()
 
 matplotlibを用いてグラフを表示<br/>
-<img src="../img/correlation/nasdaq_us10y.png" width="50%"><br/>
+<img src="../site/assets/images/nasdaq_us10y.png" width="50%"><br/>
 米国10年債が上昇すると、ナスダックが下落しているように見える
 
 ## 相関係数を表示する
