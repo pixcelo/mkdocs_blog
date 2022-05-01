@@ -35,7 +35,7 @@ Pythonで米国株の相関係数を求める方法をまとめる
     plt.show()
 
 matplotlibを用いてグラフを表示<br/>
-![graph](img/nasdaq_us10y.png)
+![graph](img/nasdaq_us10y.png)<br/>
 米国10年債が上昇すると、ナスダックが下落しているように見える
 
 ## 相関係数を表示する
