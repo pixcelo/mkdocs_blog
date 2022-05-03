@@ -2,7 +2,7 @@
 networkxはネットワーク分析に用いるpython用ライブラリ
 
 ## 公式ページ
-https://networkx.org/
+[networkx.org](https://networkx.org/)
 
 ## インストール
     pip3 install networkx
@@ -60,3 +60,12 @@ https://networkx.org/
 
 ノードに`(頂点1, 頂点2, 重み)`を渡すことで重みつき有向グラフを描画できる<br/>
 ![graph](img/networkx_dg_weight.png)
+
+## 最短経路を求める
+    print(nx.shortest_path(DG, source="A", target="D"))
+
+    > ['A', 'D']
+グラフ内の最短経路を計算するためのメソッド [shortest_path](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.shortest_path.html#networkx.algorithms.shortest_paths.generic.shortest_path) が用意されている<br/>
+`shortest_path（G, source=None, target=None, weight=None, method='dijkstra'）`<br/>
+オプションにて探索アルゴリズムを選択できる `method='bellman-ford'`<br/>
+デフォルトはダイクストラ法になる
