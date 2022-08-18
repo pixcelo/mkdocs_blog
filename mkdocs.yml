@@ -4,3 +4,5 @@ site_name: whakamarie
 docs_dir: 'docs'
 theme:
   name: 'material'
+markdown_extensions:
+  - pymdownx.superfences
