@@ -7,7 +7,7 @@ such as operating on multiple sheets or varying row counts.
 ## Cells(Rows.Count, 1).End(xlUp).Row
 This is how to get the last row of a cell using the End property.
 
-```VB
+```VBScript
 Sub get_last_row()
 
     Dim ws As Worksheet
@@ -23,3 +23,7 @@ Sub get_last_row()
 End Sub
 ```
 This way you can dynamically get the last line number.
+
+## Reference
+* [Range.End](https://docs.microsoft.com/en-us/office/vba/api/excel.range.end)
+* [Range.Rows](https://docs.microsoft.com/en-us/office/vba/api/excel.range.row)

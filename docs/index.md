@@ -1,9 +1,10 @@
 # About
 
-技術や投資について調べたことのまとめ
+This Blog is a summary of what we have found out about technology and investment.
 
-## 扱うテーマ
+## Topics
 
-* 技術関連(python, JavaScript, etc)
-* 米国株
-* 仮想通貨
+* WEB Technologies
+* Algorithmic trading
+* U.S. stocks
+* Crypto
