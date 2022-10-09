@@ -59,7 +59,7 @@ const marker = L.marker([51.5, -0.09]).addTo(map);
     const marker = L.marker([51.5, -0.09]).addTo(map);
 </script>
 
-![graph](../site/img/leaflet_marker.png)<br/>
+![map](../site/img/leaflet_marker.png)<br/>
 
 ## ソースコード
 
