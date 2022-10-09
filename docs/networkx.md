@@ -42,7 +42,7 @@ networkxはネットワーク分析に用いるpython用ライブラリ
 
     nx.draw(DG, with_labels = True)
 `DiGraph()`で有向グラフを扱うこともできる<br>
-![graph](img/networkx_dg.png)
+![graph](../site/img/networkx_dg.png)
 
 ## 有向グラフに重みを付与する
     import networkx as nx
@@ -59,7 +59,7 @@ networkxはネットワーク分析に用いるpython用ライブラリ
     nx.draw_networkx(DG, pos, with_labels=True, alpha=0.5)
 
 ノードに`(頂点1, 頂点2, 重み)`を渡すことで重みつき有向グラフを描画できる<br/>
-![graph](img/networkx_dg_weight.png)
+![graph](../site/img/networkx_dg_weight.png)
 
 ## 最短経路を求める
     print(nx.shortest_path(DG, source="A", target="D"))
