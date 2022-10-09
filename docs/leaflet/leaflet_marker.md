@@ -1,19 +1,15 @@
 # Leaflet.js でマーカーを表示する
-Leaflet.jsを使った地図とマーカー表示まで
+Leaflet.jsを使った地図とマーカー表示までの使い方
 
 ## Leaflet とは
-https://leafletjs.com/
-
-Leaflet は地図を簡単に扱えるJavaScirptライブラリ
+[Leaflet](https://leafletjs.com/)は地図を簡単に扱えるJavaScriptライブラリ
 
 ## Usage
-ダウンロード、またはCDNで読み込む
+ダウンロード、またはCDNで読み込で使用する
 ```
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 ```
-npmでもインストールできる
-https://www.npmjs.com/package/leaflet
 
 ## 地図の表示
 地図を表示する手順
@@ -63,4 +59,4 @@ const marker = L.marker([51.5, -0.09]).addTo(map);
 
 ## ソースコード
 
-https://github.com/pixcelo/Leaflet/blob/main/001/index.html
+[GitHub](https://github.com/pixcelo/Leaflet/blob/main/001/index.html)

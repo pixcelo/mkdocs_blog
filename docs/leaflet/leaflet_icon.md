@@ -12,4 +12,4 @@ CSSや画像を使うことで地図上に好きなものを置ける
 
 ## ソースコード
 
-https://github.com/pixcelo/Leaflet/blob/main/002/index.html
+[GitHub](https://github.com/pixcelo/Leaflet/blob/main/002/index.html)
