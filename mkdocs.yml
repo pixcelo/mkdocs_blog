@@ -7,3 +7,5 @@ theme:
   # Color
   palette:
       scheme: slate
+      primary: blue gray
+      accent: gray
