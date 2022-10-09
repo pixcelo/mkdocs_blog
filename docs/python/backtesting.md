@@ -74,7 +74,7 @@ Pythonのバックテスト用ライブラリ
 
 ## バックテストを可視化する
     bt.plot()
-![backtesting](../site/img/backtesting_plot.png)
+![backtesting](img/backtesting_plot.png)
 
 ズームや詳細のポップアップなど動的なグラフをプロットできる
 
