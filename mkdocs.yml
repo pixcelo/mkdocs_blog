@@ -4,5 +4,12 @@ site_name: whakamarie
 docs_dir: 'docs'
 theme:
   name: 'material'
-markdown_extensions:
-  - pymdownx.superfences
+  # 配色設定
+  - scheme: default
+    toggle:
+        icon: material/toggle-switch-off-outline
+        name: ダークモード
+  - scheme: slate
+    toggle:
+        icon: material/toggle-switch
+        name: ライトモード
