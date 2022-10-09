@@ -1,3 +1,6 @@
+# Pythonライブラリ Backtesting.py
+Pythonで米国株の相関係数を求める方法をまとめる
+
 ## Backtesting.py
 Pythonのバックテスト用ライブラリ
 
@@ -71,7 +74,7 @@ Pythonのバックテスト用ライブラリ
 
 ## バックテストを可視化する
     bt.plot()
-![backtesting](img/backtesting_plot.png)
+![backtesting](../site/img/backtesting_plot.png)
 
 ズームや詳細のポップアップなど動的なグラフをプロットできる
 

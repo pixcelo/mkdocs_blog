@@ -1,10 +1,11 @@
 # About
 
-This Blog is a summary of what we have found out about technology and investment.
+技術のアウトプット
 
 ## Topics
 
-* WEB Technologies
-* Algorithmic trading
-* U.S. stocks
-* Crypto
+* C#
+* .NET
+* JavaScirpt
+* システムトレード
+* etc..
