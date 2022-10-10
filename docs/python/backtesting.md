@@ -12,6 +12,7 @@ Pythonのバックテスト用ライブラリ
 ` Backtesting.py`はPython3で動作する
 
 ## 使い方
+```py
     from backtesting import Backtest, Strategy
     from backtesting.lib import crossover
 
@@ -34,12 +35,12 @@ Pythonのバックテスト用ライブラリ
                 exclusive_orders=True)
     stats = bt.run()
     stats
-
+```
 `BackTest(DataFrame(pandas), Strategyクラス, 手数料)`<br/>
 引数に渡すデータフレームのカラムは頭文字が大文字'Open', 'High', 'Low', 'Close'にする
 注文は現在のローソク足の終値（または次のローソク足の始値）で計算される<br/>
 `run()`はバックテストのシミュレーション結果をpandasのseries型で返す
-
+```
     Start                     2004-08-19 00:00:00
     End                       2013-03-01 00:00:00
     Duration                   3116 days 00:00:00
@@ -71,9 +72,11 @@ Pythonのバックテスト用ライブラリ
     _equity_curve                             ...
     _trades                       Size  EntryB...
     dtype: object
-
+```
 ## バックテストを可視化する
-    bt.plot()
+```
+bt.plot()
+```
 ![backtesting](img/backtesting_plot.png)
 
 ズームや詳細のポップアップなど動的なグラフをプロットできる
