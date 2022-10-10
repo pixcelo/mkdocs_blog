@@ -2,13 +2,29 @@
 Leaflet.jsのマーカーを任意に変更する方法
 CSSや画像を使うことで地図上に好きなものを置ける
 
-## 画像を置く
+## マーカーに画像をセットする
+画像を置くには`L.icon`クラスで画像を定義したアイコンを作成して、マーカーにアイコンを設定する
+```javascript
+const customIcon = L.icon({
+    iconUrl: '../img/laughing.png',
+    iconSize: [50, 50]
+});
 
+const pngMarker = L.marker([51.5, -0.09], {icon: customIcon}).addTo(map);
+```
+![map](img/leaflet_icon_smile.png)<br/>
 
-## CSSで変更する
+## CSSを指定する
+`L.divIcon`クラスでCSSを指定することができる
+```javascript
+const divIcon = L.divIcon({
+    className: 'iconClass',
+    iconSize: [50, 50]
+});
 
-
-![map](img/leaflet_marker.png)<br/>
+const divMarker = L.marker([51.5, -0.09], {icon: divIcon}).addTo(map);
+```
+![map](img/leaflet_icon_div.png)<br/>
 
 ## ソースコード
 
