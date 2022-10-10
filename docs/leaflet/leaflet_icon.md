@@ -12,7 +12,7 @@ const customIcon = L.icon({
 
 const pngMarker = L.marker([51.5, -0.09], {icon: customIcon}).addTo(map);
 ```
-![map](img/leaflet_icon_smile.png)<br/>
+![map](img/leaflet_icon_smile.png)
 
 ## CSSを指定する
 `L.divIcon`クラスでCSSを指定することができる
