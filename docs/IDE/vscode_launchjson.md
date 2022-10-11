@@ -3,11 +3,11 @@
 
 ## launch.json作成
 サイドバーのデバッグボタンから`create a launch.json file`を選択<br>
-<img src="img/vscode_sidebar_debug.png" width="20%">
+![sidebar](img/vscode_sidebar_debug.png)
 <br>
 
 `Node.js`を選択<br>
-<img src="img/vscode_select_nodejs.png" width="50%">
+![select](img/vscode_select_nodejs.png)
 <br>
 
 `.vscode`フォルダと`launch.json`が作成される<br>
@@ -32,7 +32,8 @@
 }
 ```
 
-`runtimeArgs`にデバッグする実行ランタイムを指定する
+`runtimeArgs`にデバッグする実行ランタイムを指定する<br>
+あとはブレークポイントを貼って、デバッグを実行すればOK
 ```json
 {
     "version": "0.2.0",
