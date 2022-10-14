@@ -7,21 +7,24 @@ O(n^2) <br>
 アルゴリズムとして直感的でわかりやすい<br>
 
 ## 実装
-```javascript
-let data = [30, 10, 40, 90, 70, 20, 80];
-console.log("before ", data);
+```C#
+public void BubbleSort()
+{
+    var list = new List<int> { 30, 10, 40, 90, 70, 20, 80 };
 
-for (let i = data.length - 1; i > 0; i--) {
-    for (let j = 0; j < i; j++) {
-        if(data[j] > data[j + 1]) {
-            let tmp = data[j + 1];
-            data[j + 1] = data[j];
-            data[j] = tmp;
+    for (int i = list.Count - 1; i > 0; i--)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            if (list[j] > list[j + 1])
+            {
+                int tmp = list[j + 1];
+                list[j + 1] = list[j];
+                list[j] = tmp;
+            }
         }
     }
 }
-
-console.log("after ", data);
 ```
 
 ## ソースコード
