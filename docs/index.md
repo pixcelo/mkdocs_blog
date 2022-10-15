@@ -1,9 +1,12 @@
 # About
+技術のアウトプット<br>
 
-技術のアウトプット
+## The Significance of This page
+- 新しいものにチャレンジし、学んだことを記録する
+- 知識の曖昧な箇所をクリアにする
+- 実務で学んだことの備忘録
 
 ## Topics
-
 * C#
 * .NET
 * JavaScirpt
