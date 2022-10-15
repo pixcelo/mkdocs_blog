@@ -6,7 +6,7 @@ O(n^2) <br>
 先頭から順次処理されるので遅い<br>
 アルゴリズムとして直感的でわかりやすい<br>
 
-## 実装
+## C#での実装
 ```C#
 public void BubbleSort()
 {
@@ -29,3 +29,6 @@ public void BubbleSort()
 
 ## ソースコード
 [GitHub](https://github.com/pixcelo/Algorithm_csharp/blob/main/Algorithms/Service/SortService.cs)
+
+## Reference
+[VISUALGO](https://visualgo.net/en)
