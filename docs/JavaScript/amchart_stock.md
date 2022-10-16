@@ -209,7 +209,7 @@ amChart5をCDNで使用<br>
 
 インジケーターも標準搭載している<br>
 下はMAを表示した状態<br>
-![stock](img/amChart_stock_indicator.png)<br>
+![indicator](img/amCHart_stock_indicator.png)<br>
 
 ## ソースコード
 [stock chart](https://gist.github.com/pixcelo/c6b38a5ad40d81585162d028178d4759)
