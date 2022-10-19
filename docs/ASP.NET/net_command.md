@@ -2,7 +2,7 @@
 Macで`.NET`の開発がしたい<br>
 だが visual studio for mac は使いにくい (windows版と色々と仕様が異なる)<br><br>
 
-そこで`dotnet`コマンドと、VSコードで開発することにした<br>
+そこで`.NET CLI`と、VSコードで開発することにした<br>
 このページはその時のメモ<br>
 
 ## dotnetコマンド
@@ -16,6 +16,11 @@ dotnet new mvc \
     -f net6.0 \   # フレームワークSDL
     -lang "C#" \  # 言語　
     -n Sample     # プロジェクト名
+```
+
+パッケージ追加
+```
+dotnet add package <pakage name>
 ```
 
 ソース コードを実行
