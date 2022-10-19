@@ -5,6 +5,9 @@ Macで`.NET`の開発がしたい<br>
 そこで`.NET CLI`と、VSコードで開発することにした<br>
 このページはその時のメモ<br>
 
+## .NET SDLをインストール
+公式の[.NET SDK](https://dotnet.microsoft.com/ja-jp/download)からダウンロードしてくる<br>
+
 ## dotnetコマンド
 MVCプロジェクトを作成
 ```
