@@ -53,7 +53,7 @@ const fnFactory = function() {
 const fn = fnFactory();
 ```
 
-2. 数値を加算するカウンター<br>
+2. 数値を加算するカウンター
 1ずつ加算する関数なら、下記のように書ける
 ```javascript
 const fnFactory = function() {
