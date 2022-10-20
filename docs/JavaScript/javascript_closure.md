@@ -11,14 +11,36 @@ JavaScript クロージャの使用例
 
 
 ```
-
 <button id="btn" type="button">
-    Add to favorites
+	button
 </button>
+
+<p id="txt"></p>
+
 <script>
-    const btn = document.getElementById('btn');
-    btn.addEventListener('click', function() { alert('clicked') } );
-<script>
+const fnFactory = function() {
+  let flg = true;
+
+	const fn = function () {
+		flg = !flg;
+		document.getElementById('txt').textContent =  flg .toString();
+	}
+
+  return fn;
+}
+
+const fn = fnFactory();
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  fn();
+});
+
+</script>
+
+
+
+<script async src="//jsfiddle.net/teckk/25ht1fj8/20/embed/js,html,result/dark/"></script>
 
 ## Reference
 [クロージャ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Closures)
