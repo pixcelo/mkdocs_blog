@@ -1,11 +1,11 @@
 # JavaScirpt クロージャとプライベート変数
-JavaScript クロージャの使用例
+JavaScriptでのクロージャの実装サンプル
 
 ## クロージャとは
 クロージャとは、レキシカルスコープ（参照可能な外部の関数スコープ）を参照している状態のこと<br>
 
 ## ソースコード
-1. ON・OFFを切り替えるスイッチ<br>
+1. ON・OFFを切り替えるスイッチ
 ```html
 <body>
     <button id="btn" type="button">
@@ -54,7 +54,7 @@ const fn = fnFactory();
 ```
 
 2. 数値を加算するカウンター<br>
-1ずつ加算する関数なら、下記のように書ける<br>
+1ずつ加算する関数なら、下記のように書ける
 ```javascript
 const fnFactory = function() {
     let n = 0;
@@ -73,6 +73,7 @@ const fn = fnFactory();
 ## JSFiddle
 <iframe width="100%" height="300" src="//jsfiddle.net/teckk/25ht1fj8/29/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
+Sample 2
 <iframe width="100%" height="300" src="//jsfiddle.net/teckk/d1knL52q/1/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Reference
