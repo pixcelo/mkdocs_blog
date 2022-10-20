@@ -12,5 +12,13 @@ JavaScript クロージャの使用例
 
 ```
 
+<button id="btn" type="button">
+    Add to favorites
+</button>
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() { alert('clicked') } );
+<script>
+
 ## Reference
 [クロージャ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Closures)
