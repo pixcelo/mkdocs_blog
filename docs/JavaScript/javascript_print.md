@@ -39,7 +39,14 @@ HTML要素自体を操作するアプローチをとった<br>
 </body>
 ```
 今回は試してはいないが、`z-index`を操作して白い背景と表示したい要素だけを前面に出しても面白いかもしれない<br>
-WEBページの作りによっては、HTML要素をループして、印刷したい要素以外を非表示にすればOKの場合もある
+WEBページの作りによっては、HTML要素をループして、印刷したい要素以外を非表示にすればOKの場合もある<br><br>
+
+ちなみに`insertBefore`で間違った指定の仕方をすると、下記のようなエラーが出る
+```
+Uncaught DOMException: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.
+```
+通常は、親子関係でない指定をしている場合に出るエラーだが<br>
+idが重複しているHTML要素に対して`insertBefore`をしようとして、意図した要素を取得できずハマったことがある
 
 ## ソースコード
 [Gist](https://gist.github.com/pixcelo/0ed0cae70b020be80ac36046e1d1203c)
