@@ -30,5 +30,11 @@ namespace Sample
 }
 ```
 
+HTML (C#)<br>
+`.aspx`形式のviewファイルを認識してくれる<br>
+![ex_csharper](img/net_ex_csharp_aspx.png)<br>
+
+良いのが見つかれば、随時追加する
+
 ## Reference
 [dotnet GitHub](https://github.com/dotnet)<br>

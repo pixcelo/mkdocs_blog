@@ -4,14 +4,15 @@
 ## The Significance of This page
 - 新しいものにチャレンジし、学んだことを記録する
 - 知識の曖昧な箇所をクリアにする
+- 思考の整理
+- 言語化の練習
 - 実務で学んだことの備忘録
+- スニペットとしての役割
 
 ## Topics
 * C#
 * .NET
 * JavaScirpt
-* Python
-* システムトレード
 * etc..
 
 ## Site
