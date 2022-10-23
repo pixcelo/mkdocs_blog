@@ -43,7 +43,7 @@
 ```
 
 ## 式を表示する
-(式の表示)[https://learn.microsoft.com/ja-jp/previous-versions/visualstudio/visual-studio-2010/6dwsdcf5(v=vs.100)]<br>
+[式の表示](https://learn.microsoft.com/ja-jp/previous-versions/visualstudio/visual-studio-2010/6dwsdcf5(v=vs.100))<br>
 Viewで変数を表示したり、関数を使用したりできる
 
 `.aspx`
@@ -56,7 +56,7 @@ Viewで変数を表示したり、関数を使用したりできる
     </body>
 </html>
 ```
-全般的にRazor構文の方が記述量が減るため可読性が高い
+全般的にRazor構文の方が記述量が減るため可読性が高い<br>
 `.cshtml`
 ```html
 <html>
