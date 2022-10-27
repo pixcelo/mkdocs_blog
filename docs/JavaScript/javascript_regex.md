@@ -22,6 +22,10 @@
 右下にて、正規表現のリファレンスが参照できる<br>
 ![101](img/101_reference.png)<br>
 
+## エスケープ
+JavaScriptに[文字クラス](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)として定義されている特殊文字は、バックスラッシュ`\`でエスケープする必要がある<br>
+バックスラッシュ`\`は、macなら`option + ¥`で入力できる
+
 ## Reference
 [MDN 正規表現](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions)<br>
 [regular expressions 101](https://regex101.com/)<br>
