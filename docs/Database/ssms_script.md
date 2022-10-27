@@ -1,5 +1,9 @@
 # SQLServer SSMSでテーブルをスクリプト化する
 
+SSMS (SQL Server Management Studio) のコマンドを使用することで、スクリプトを作成できる<br>
+現在のデータベース状態を保存しておくことで、差分比較や切り戻しに使える<br>
+
+## Usage
 データベース名をクリックして、タスク→スクリプトの作成と進む<br>
 
 ![script_step1](img/ssms_script_step1.png)
@@ -29,7 +33,10 @@
 
 ![script_step7](img/ssms_script_step7.png)
 
-## 単一のテーブルの場合
-単一のテーブルのスクリプトを生成するならテーブルを右クリックが早い<br>
+## 単一テーブルをスクリプト化する場合
+テーブル単体をスクリプト化する場合は、テーブルを右クリックが早い<br>
 
 ![script_single](img/ssms_script_single.png)
+
+## Reference
+[SQL Server Management Studio でオブジェクトのスクリプトを作成する](https://learn.microsoft.com/ja-jp/sql/ssms/tutorials/scripting-ssms?view=sql-server-ver16)<br>
