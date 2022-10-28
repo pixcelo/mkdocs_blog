@@ -28,4 +28,5 @@ JavaScriptに[文字クラス](https://developer.mozilla.org/ja/docs/Web/JavaScr
 
 ## Reference
 [MDN 正規表現](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions)<br>
+[MDN 文字クラス](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)<br>
 [regular expressions 101](https://regex101.com/)<br>
