@@ -35,6 +35,18 @@ brew install redis
 
 ## データを格納する
 
+- データを入れる `set key value`
+- データを取り出す `get key`
+
+```c
+redis-cli
+redis 127.0.0.1:6379> set mykey somevalue
+OK
+redis 127.0.0.1:6379> get mykey
+"somevalue"
+```
+
+## 永続化
 
 ## 各言語のライブラリ
 https://redis.io/docs/libraries/
