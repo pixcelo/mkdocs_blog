@@ -1,15 +1,4 @@
----
-title: "n進数"
-date: "2020-07-18T22:40:32.169Z"
-template: "post"
-draft: false
-slug: "a-binary-number"
-category: "programming"
-tags:
-  - "study"
-description: "n進数の扱い。"
-socialImage: "/media/image-0.jpg"
----
+# n進数の扱い
 
 2進数とは、0と1の数字を使って表す表現方法<br>
 
