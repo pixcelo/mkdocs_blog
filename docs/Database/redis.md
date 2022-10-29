@@ -1,4 +1,5 @@
 # Redis
+インメモリデータベース
 
 - KVS (Key Value Store)
 - OSSのメモリデータストア
@@ -47,6 +48,13 @@ OK
 redis 127.0.0.1:6379> get mykey
 "somevalue"
 ```
+- データを消す `del key`
+```c
+127.0.0.1:6379> del mykey
+(integer) 1
+127.0.0.1:6379> get mykey
+(nil)
+```
 
 ## GUI Client
 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)<br>
@@ -56,13 +64,35 @@ redis 127.0.0.1:6379> get mykey
 ```
 brew install --cask another-redis-desktop-manager
 ```
-デザインも良い
+デザインも良い (ダークモードもある)
 ![anotherRedisDesktopManager](img/anotherRedisDesktopManager.png)
 先ほど`redis-server`で立てたRedisのデータがGUIで確認できた
 
 ## 永続化
 RDB、 AOFの2種類の永続化の方法を選択、あるいは両方を使用する<br>
 
+### RDB
+`save`コマンドでスナップショットをとる
+- 900秒後に1個以上のキーが変更
+- 300秒後に10個以上のキーが変更
+- 60秒後に10000個以上のキーが変更
+```
+save 900 1
+save 300 10
+save 60 10000
+```
+### AOF
+書き込みごとに自動的に保存される（その分、データ容量が大きくなる）<br>
+AOFはデフォルトはオフなので設定で有効化する
+```
+appendonly yes
+```
+
+## Node.jsでRedisを読み込む
+Node.jsで扱うには、`node-redis`をインストールする
+```
+npm i redis
+```
 
 ## 各言語のライブラリ
 https://redis.io/docs/libraries/
