@@ -14,7 +14,7 @@
 `Range("A1").Offset(0, 3).Select`
 
 ## Usage
-```vb
+```VBScript
 ' 引数にセル範囲・検索値を受け取って、取得した隣のセルの値を返す
 Function sample_find(check_range As Range, id As Long) As String
 

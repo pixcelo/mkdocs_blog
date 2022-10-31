@@ -4,7 +4,7 @@
 `Group`は、オブジェクトをグループ化するメソッド
 
 ## Usage
-```vb
+```VBScript
 Sub sample_Group()
 
     Dim ws As Worksheet

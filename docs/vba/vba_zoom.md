@@ -7,7 +7,7 @@
 
 ## Usage
 
-```vb
+```VBScript
 Sub sample_Zoom()
 
     Dim ws As Worksheet
