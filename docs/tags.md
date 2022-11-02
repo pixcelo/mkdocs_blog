@@ -2,4 +2,5 @@
 
 Following is a list of relevant tags:
 
-[TAGS]
+[JavaScript]
+[正規表現]

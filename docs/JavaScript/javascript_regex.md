@@ -1,3 +1,9 @@
+---
+tags:
+  - JavaScript
+  - 正規表現
+---
+
 # JavaScript 正規表現のチェックサイト「regex101.com」の使い方
 
 正規表現を使用する際のメモ<br>
