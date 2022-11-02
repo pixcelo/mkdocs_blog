@@ -35,6 +35,15 @@
 ```
 ![num](img/regex_num.png)
 
+記号でも`{n}`や`{min,}`などを表現できる
+```c
+? == {0,1}
++ == {1,}
+* == {0,}
+```
+![q](img/regex_q.png)
+
+
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
 バックスラッシュは `option + ¥`
@@ -45,3 +54,4 @@
 
 ## Reference
 [MDN 正規表現](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions)<br>
+[.NETの正規表現](https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/regular-expressions)<br>
