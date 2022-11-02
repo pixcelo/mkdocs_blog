@@ -1,11 +1,19 @@
-# How to get the last row cell in Excel VBA.
-This section explains how to get the last row of cells in Excel VBA.
+# Excel VBAで最終行のセルを取得する
 
-You may want to get the last row of a cell in various situations,<br>
-such as operating on multiple sheets or varying row counts.
+複数シートに対して操作する場合や、行数が変動するなど<br>
+様々なシーンでセルの最終行を取得したいときに使用
 
-## Cells(Rows.Count, 1).End(xlUp).Row
-This is how to get the last row of a cell using the End property.
+## Usage
+
+`Cells(Rows.Count, 1).End(xlUp).Row`<br>
+
+Endプロパティを利用して最終行を取得する<br>
+
+`Cells(Rows.Count, 1)`は<br>
+
+1列目の「エクセルの最大行」（つまり一番下）のこと<br>
+
+`.End(xlUp).Row`は、そのオブジェクトの場所から上に飛んだセルの行番号
 
 ```VBScript
 Sub get_last_row()
@@ -22,8 +30,7 @@ Sub get_last_row()
 
 End Sub
 ```
-This way you can dynamically get the last line number.
 
 ## Reference
-* [Range.End](https://docs.microsoft.com/en-us/office/vba/api/excel.range.end)
-* [Range.Rows](https://docs.microsoft.com/en-us/office/vba/api/excel.range.row)
+[Range.End](https://docs.microsoft.com/en-us/office/vba/api/excel.range.end)<br>
+[Range.Rows](https://docs.microsoft.com/en-us/office/vba/api/excel.range.row)
