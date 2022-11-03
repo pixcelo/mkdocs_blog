@@ -20,6 +20,14 @@ const unixTimestamp = date.getTime();
 console.log(unixTimestamp);
 ```
 
+### Note
+JavaScriptでの月は「0起点」<br>
+11月を引数に渡すと、12月(December)となることに注意
+```javascript
+new Date(2022, 11, 2, 3, 15, 30);
+// Fri Dec 02 2022 03:15:30 GMT+0900 (Japan Standard Time)
+```
+
 APIのパラメータとして渡すときに、タイムスタンプの桁数を調整する場合がある
 ```javascript
 const unixTimestamp = date.getTime();
