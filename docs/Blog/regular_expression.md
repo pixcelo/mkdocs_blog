@@ -48,6 +48,21 @@ tags:
 ```
 ![q](img/regex_q.png)
 
+## アンカー
+```c
+^  == 行の先頭
+$  == 行の末尾
+\b \b == 間の単語を指定
+```
+`^` キャレット（ハット）で先頭の数値を指定<br>
+![hat](img/regex_hat.png)
+
+`$` で末尾の数値を指定<br>
+![hat](img/regex_dollar.png)
+
+`\b \b`で囲んだ単語を指定<br>
+![boundary](img/regex_word_boundary.png)
+
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
 バックスラッシュは `option + ¥`
