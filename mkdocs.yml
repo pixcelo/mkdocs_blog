@@ -4,6 +4,7 @@ site_name: whakamarie
 docs_dir: 'docs'
 theme:
   name: 'material'
+  language: ja
   # Color
   palette:
       scheme: slate
@@ -28,6 +29,8 @@ extra:
   analytics:
     provider: google
     property: G-W7KQBBZSKT
+  search:
+    language: 'jp'
 
 plugins:
   - tags
