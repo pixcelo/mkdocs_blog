@@ -34,7 +34,7 @@ extra:
 
 plugins:
   - tags
-  - search
-    lang:
-      - en
-      - ja
+  - search:
+      lang:
+        - en
+        - ja
