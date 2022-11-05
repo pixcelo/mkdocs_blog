@@ -9,12 +9,14 @@ tags:
 正規表現をチェックするサイトについては[こちら](https://pixcelo.github.io/whakamarie/JavaScript/javascript_regex/)でまとめた
 
 ## メタ文字
+メタ文字とは正規表現の中で特別な意味を持つ文字や記号<br>
+メタ文字自身を指定するときはエスケープ処理をする
 ```c
 . ドット == 改行を除く任意の一文字
 ```
 ![dot](img/regex_dot.png)
 
-## 文字種
+### 文字種
 ```c
 \d == 0-9
 \w == a-z, A-Z, 0-9, _
@@ -31,7 +33,7 @@ tags:
 `a`から始まる文字列を指定<br>
 ![d](img/regex_w.png)<br><br>
 
-## 量指定子
+### 量指定子
 直前の文字を何回繰り返すかを指定する
 ```c
 {n} == n個
@@ -48,7 +50,7 @@ tags:
 ```
 ![q](img/regex_q.png)
 
-## アンカー
+### アンカー
 ```c
 ^  == 行の先頭
 $  == 行の末尾
@@ -62,6 +64,13 @@ $  == 行の末尾
 
 `\b \b`で囲んだ単語を指定<br>
 ![boundary](img/regex_word_boundary.png)
+
+### 選択子
+どちらかを指定
+```c
+abc|123  == abc or 123
+```
+![dot](img/regex_or.png)
 
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
