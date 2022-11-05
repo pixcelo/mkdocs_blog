@@ -19,7 +19,7 @@ dotnet new classlib -o PrimeService
 
 ## クラス作成
 テスト対象のクラスを作成
-```C#:title="PrimeService.cs"
+```C#
 using System;
 
 namespace Prime.Services
@@ -277,6 +277,7 @@ A total of 1 test files matched the specified pattern.
 Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 4 ms - /Users/***/project/csharp/dotnet_core_xunit/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/net6.0/PrimeService.Tests.dll (net6.0)
 ```
 
+## Reference
 
 [dotnet テストと xUnit を使用した .NET Core での単体テスト C#](https://learn.microsoft.com/ja-jp/dotnet/core/testing/unit-testing-with-dotnet-test)<br>
 [dotnet test](https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-test)<br>

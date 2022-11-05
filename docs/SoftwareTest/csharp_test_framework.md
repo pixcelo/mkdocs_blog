@@ -10,16 +10,16 @@ tags:
 ## .NETのテストフレームワーク
 主に3つのフレームワークが存在する
 1. xUnit
-- クロスプラットフォーム
-- 一番人気
+クロスプラットフォーム
+一番人気
 
 2. NUnit
-- クロスプラットフォーム
-- JUnit(Java)の流れを組む
+クロスプラットフォーム
+JUnit(Java)の流れを組む
 
 3. MSTest
-- visual studio必須
-- 簡単に始められる
+visual studio必須
+簡単に始められる
 
 2022.11.5時点でのNuget Trends<br>
 ![nuget trends](img/nuget_trends_csharp_test_framework.png)
@@ -29,7 +29,7 @@ xUnitが一番良さそうな印象を受けた<br>
 技術を選定する際は、たくさん使われているものを選んでおくのが無難である
 <br><br>
 
-理由は以下の通り
+理由は以下の通り<br>
 - 調べたときに情報が多い
 - 移籍しても使える
 - 技術が長持ちする
