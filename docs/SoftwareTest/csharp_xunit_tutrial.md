@@ -2,6 +2,7 @@
 tags:
   - C#
   - テスト
+  - xUnit
 ---
 
 # xUnit チュートリアル
@@ -280,6 +281,7 @@ Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration:
 ## Reference
 
 [dotnet テストと xUnit を使用した .NET Core での単体テスト C#](https://learn.microsoft.com/ja-jp/dotnet/core/testing/unit-testing-with-dotnet-test)<br>
+[dotnet add reference](https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-add-reference)<br>
 [dotnet test](https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-test)<br>
 [xUnit](https://xunit.net/)<br>
 [dotnet/sample](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)<br>

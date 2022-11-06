@@ -1,3 +1,8 @@
+---
+tags:
+  - IDE
+---
+
 # Visual Studio Code でよく使うショートカット
  VSコードで使用頻度の高いショートカット
 
@@ -32,5 +37,23 @@
  ⌘ + shift + f
  ```
 
-VSコードは多機能すぎて全てを把握できない<br>
-マルチカーソルをvisual studioでも使えるようにしてほしい...
+ タブ移動
+ ```
+ option + ⌘ + ⇄
+ ```
+
+ タブを閉じる
+ ```
+ ⌘ + w
+ ```
+
+ コード整形（フォーマッターが必要）
+ ```
+ option + shift + f
+ ```
+
+Winodwsの場合はすべて option => alt
+
+## Reference
+[Visual Studio Code](https://code.visualstudio.com/)<br>
+[Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings)<br>

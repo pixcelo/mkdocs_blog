@@ -9,6 +9,7 @@
 
 ## ブログ
 [Cysharp 河合宜文さんのブログ](https://neue.cc/)<br>
+[和田卓人さん(テスト駆動開発)](https://t-wada.hatenablog.jp/)<br>
 
 ## Twitter
 [和田卓人さん(テスト駆動開発)](https://twitter.com/t_wada)<br>

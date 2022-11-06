@@ -1,3 +1,8 @@
+---
+tags:
+  - VBA
+---
+
 # Excel VBA でシートの全画像をグループ化する
 
 ## Group
