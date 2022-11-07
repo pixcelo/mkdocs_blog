@@ -55,7 +55,7 @@ dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeServi
 
 この時点での`PrimeService.Tests.csproj`<br>
 テスト対象となるプロジェクトが`ProjectReference`に登録されている状態
-```C#
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>

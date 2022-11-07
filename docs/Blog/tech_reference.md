@@ -7,6 +7,10 @@
 - 何度も参照したい
 - 単純におもしろい
 
+## Q&Aサイト
+[stack overflow](https://stackoverflow.com/)<br>
+[gis Stack Exchange](https://gis.stackexchange.com/)<br>
+
 ## ブログ
 [Cysharp 河合宜文さんのブログ](https://neue.cc/)<br>
 [和田卓人さん(テスト駆動開発)](https://t-wada.hatenablog.jp/)<br>
