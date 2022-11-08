@@ -1,3 +1,8 @@
+---
+tags:
+  - VBA
+---
+
 # Excel VBA プロシージャの処理時間を計測する
 
 ## Timer

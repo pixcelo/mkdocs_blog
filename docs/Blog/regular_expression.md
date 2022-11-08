@@ -72,6 +72,13 @@ abc|123  == abc or 123
 ```
 ![dot](img/regex_or.png)
 
+### 文字クラス
+```c
+[abc]  == a, b, cのどれか一文字を指す
+```
+![square brackets](img/regx_square_brackets.png)
+
+
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
 バックスラッシュは `option + ¥`

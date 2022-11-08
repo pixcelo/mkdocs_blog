@@ -1,4 +1,9 @@
-# Excel VBA で表示倍率を変更する
+---
+tags:
+  - VBA
+---
+
+# Excel VBA 表示倍率を変更する
 
 ## ActiveWindow.Zoom
 

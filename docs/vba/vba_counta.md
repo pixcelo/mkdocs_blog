@@ -1,14 +1,20 @@
-# How to check if a cell has input in a range in Excel VBA.
-In Excel VBA, there are cases where you want to assign processing to cells in a specified range based on whether or not a value is entered in the cell.
+---
+tags:
+  - VBA
+---
 
-For example, you may want to check for errors when you reach a row with input in a cell by looking at the rows in order from the top to the bottom.
+# Excel VBA 範囲内のセルに入力があるかどうかを確認する
+指定した範囲のセルに対して、値が入力されたかどうかで処理を割り振りたい場合がある
+<br><br>
 
-In such a case, you can use the `CountA` function.
+e.g.<br>
+セルに入力がある行に到達したとき、上から順番に見てエラーをチェックしたい
+
+このようなケースにおいて`CountA`関数を使用する
 
 ## CountA
-CountA returns the total number of pieces of data in each item.
-
-In other words, if there is at least one count, then some value has been entered into the cell.
+CountA は、各項目のデータの総数を返す<br>
+少なくとも1つ以上カウントがあれば、そのセルに何らかの値が入力されたことを示す
 
 ```VBScript
 Sub CountA()
@@ -25,14 +31,13 @@ Sub CountA()
 
 End Sub
 ```
-In the sample example, we look at rows 1 through 10 in order.
+サンプルの例では、1行目から10行目までを順番に見ている<br>
+2行目から5行目の範囲に入力があれば、If文のブロックに入る<br>
 
-If there is any input in the range of rows 2 through 5, it will go into a block in the If statement.
+## 注意点
+空文字列の入力がある場合、`CountA`はそのセルに見かけ上の入力がなくても 入力があると判断する<br>
 
-## Points to note
-If there is an empty string input, CountA determines that there is an input even if the cell does not have an apparent input.
-
-Note that this may cause unintended behavior.
+そのため、意図しない動作を引き起こす可能性があることに注意<br>
 
 ## Reference
-* [CountA](https://docs.microsoft.com/en-us/office/vba/api/excel.worksheetfunction.counta)
+[WorksheetFunction.CountA メソッド (Excel)](https://learn.microsoft.com/ja-jp/office/vba/api/excel.worksheetfunction.counta)
