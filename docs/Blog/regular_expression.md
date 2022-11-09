@@ -78,6 +78,10 @@ abc|123  == abc or 123
 ```
 ![square brackets](img/regx_square_brackets.png)
 
+```c
+[^a] == aの否定（[]の直後しか使えない）
+```
+![not](img/regex_not_hat.png)
 
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
