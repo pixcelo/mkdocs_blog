@@ -1,5 +1,14 @@
-## SQLServer シーケンス番号（連番）を振る
-SQLServerで連番を振るためのクエリ
+---
+tags:
+  - SQLServer
+  - SQL
+---
+
+# SQLServer 連続した番号を採番する
+SQLServerでシーケンス番号（連番）を振るためのクエリ
+
+## ROW_NUMBER
+すべての行に番号を付ける
 
 ## Usage
 ```SQL
@@ -9,7 +18,7 @@ SELECT
     studentName,
     ROW_NUMBER() OVER(ORDER BY class, studentId　ASC) num
 FROM student;
- ```
+```
 
 ```SQL
 -- グループ単位で連番を振る

@@ -83,6 +83,12 @@ abc|123  == abc or 123
 ```
 ![not](img/regex_not_hat.png)
 
+```c
+[a-b] == a〜bまでの範囲を指定する（文字コード表の順に基づく）
+```
+![not](img/regex_range.png)
+
+
 ## エスケープ
 メタ文字をエスケープして、リテラルとして検索する<br>
 バックスラッシュは `option + ¥`
@@ -94,3 +100,4 @@ abc|123  == abc or 123
 ## Reference
 [MDN 正規表現](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions)<br>
 [.NETの正規表現](https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/regular-expressions)<br>
+[文字コード](https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89)<br>
