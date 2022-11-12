@@ -72,7 +72,8 @@ abc|123  == abc or 123
 ```
 ![dot](img/regex_or.png)
 
-### 文字クラス
+### 文字クラス [ ]
+`[ ]`で囲んで使用する<br>
 ```c
 [abc]  == a, b, cのどれか一文字を指す
 ```
@@ -88,9 +89,10 @@ abc|123  == abc or 123
 ```
 ![not](img/regex_range.png)
 
+文字クラス内のエスケープは、それ以外と少し挙動が異なる場合がある<br>
 
 ## エスケープ
-メタ文字をエスケープして、リテラルとして検索する<br>
+メタ文字をエスケープして、リテラル(通常の文字)として検索する<br>
 バックスラッシュは `option + ¥`
 ```c
 \ バックスラッシュ == 次の文字をエスケープする
@@ -100,4 +102,5 @@ abc|123  == abc or 123
 ## Reference
 [MDN 正規表現](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions)<br>
 [.NETの正規表現](https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/regular-expressions)<br>
+[メタ文字](https://www.php.net/manual/ja/regexp.reference.meta.php)<br>
 [文字コード](https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89)<br>

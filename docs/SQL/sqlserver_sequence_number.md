@@ -4,7 +4,7 @@ tags:
   - SQL
 ---
 
-# SQLServer 連続した番号を採番する
+# SQLServer 連続した番号を採番する ROW_NUMBER
 SQLServerでシーケンス番号（連番）を振るためのクエリ
 
 ## ROW_NUMBER
