@@ -72,6 +72,31 @@ abc|123  == abc or 123
 ```
 ![dot](img/regex_or.png)
 
+### 改行とタブ
+```c
+\t         == タブ
+\r\n       == 改行(Windows)
+\r         == 改行(v9までのmacOS)
+\n         == 改行(Unix、v10以降のmacOS)
+\r\n|\n|\r == 改行(すべて)
+```
+1個以上の改行を指定して、replaceメソッドで置換するようなシーンに利用できる
+
+![tab newLine](img/regex_newLine.png)
+
+### キャプチャグループ
+`()`で囲んだ単語を1つのグループとして記憶する
+```c
+(\w+) == 1つ以上の単語
+```
+番号で取り出したり、名前をつけて取り出す（名前付きキャプチャ）ことも可能
+
+### 後方参照
+```c
+() => \1, \2 と番号で後方の単語にアクセスする
+```
+![after](img/regex_after_ref.png)
+
 ### 文字クラス [ ]
 `[ ]`で囲んで使用する<br>
 ```c
@@ -89,7 +114,9 @@ abc|123  == abc or 123
 ```
 ![not](img/regex_range.png)
 
-文字クラス内のエスケープは、それ以外と少し挙動が異なる場合がある<br>
+- 文字クラス内で`^`、`-`、`]`、`\`を使うときはエスケープが必要
+- `^`は`[^`のように最初に使用しない場合は、リテラルとして扱われる
+- `[-`のように範囲を指定する対象がない場合は、リテラルとして扱われる
 
 ## エスケープ
 メタ文字をエスケープして、リテラル(通常の文字)として検索する<br>
@@ -104,3 +131,6 @@ abc|123  == abc or 123
 [.NETの正規表現](https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/regular-expressions)<br>
 [メタ文字](https://www.php.net/manual/ja/regexp.reference.meta.php)<br>
 [文字コード](https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89)<br>
+[グループと範囲 MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Backreferences)<br>
+[キャプチャグループ](https://ja.javascript.info/regexp-groups)<br>
+[正規表現でのコンストラクトのグループ化](https://learn.microsoft.com/ja-jp/dotnet/standard/base-types/grouping-constructs-in-regular-expressions)<br>
