@@ -11,10 +11,45 @@ C#でも他言語と同様に、jsonとオブジェクトを相互変換する�
 `Newtonsoft.Json`と`System.Text.Json`
 
 ## Usage
+### シリアル化（シリアライズ）
+C#オブジェクトをjsonに変換
 ```C#
-
+string jsonString = JsonSerializer.Serialize(person);
+File.WriteAllText("sample.json", jsonString);
 ```
 
+### 逆シリアル化（デシリアライズ）
+- 事前に変換先のC#オブジェクトを用意
+- jsonとオブジェクトのプロパティ名を一致させる必要がある
+```C#
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+```
+
+```json
+{
+  "Name": "Tom",
+  "Age": 21
+}
+```
+
+jsonファイルを読み込み、C#オブジェクトに変換<br>
+```C#
+using System.Text.Json;
+
+namespace Sample
+{
+  class Program
+  {
+    string filePath = "../sample/sample.json";
+    string? json = File.ReadAllText(filePath);
+    var person = JsonSerializer.Deserialize<Person>(json);
+  }
+}
+```
 
 ## Reference
 [シリアル化 (C#)](https://learn.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/serialization/)<br>
