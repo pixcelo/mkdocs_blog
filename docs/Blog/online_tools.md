@@ -11,3 +11,6 @@ tags:
 
 JsonをC#のクラスに変換する<br>
 [json2csharp](https://json2csharp.com/)
+
+クラス図、ER図などを描画してGoodleドライブやGitHubに保存できる<br>
+[draw.io](logical_thinking.jpg)
