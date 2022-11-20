@@ -1,6 +1,7 @@
 ---
 tags:
   - C#
+  - 正規表現
 ---
 
 # C#で文字列の中から一部分を取り出す
@@ -39,8 +40,27 @@ int strIndex = str.Length - 3;
 string result = str.Substring(strIndex);
 // 789
 ```
+[オンラインエディタ](https://paiza.io/ja/projects/new?language=csharp)等を使用して確認すると理解しやすく、実装も容易となる
 
-[オンラインエディタ](https://paiza.io/ja/projects/new?language=csharp)等を使用して確認すると理解しやすい
+### 正規表現と組み合わせる
+
+正規表現で出現位置を指定して、`Substring`で切り出す
+```cs
+public string RemoveHouseNumber(string address)
+{
+    Match match = Regex.Match(address, @"\d");
+
+    if (match.Value == "")
+    {
+        return address;
+    }
+
+    return string.IsNullOrEmpty(address)
+           ? string.Empty
+           : address.Substring(0, address.IndexOf(match.Value));
+}
+```
 
 ## Reference
 [String.Substring メソッド](https://learn.microsoft.com/ja-jp/dotnet/api/system.string.substring?view=net-7.0)
+[String.IndexOf メソッド](https://learn.microsoft.com/ja-jp/dotnet/api/system.string.indexof?view=net-7.0)<br>

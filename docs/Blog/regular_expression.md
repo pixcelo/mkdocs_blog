@@ -1,12 +1,17 @@
 ---
 tags:
   - 正規表現
+  - JavaScirpt
 ---
 
 # 正規表現
 
 正規表現についてのメモ<br>
 正規表現をチェックするサイトについては[こちら](https://pixcelo.github.io/whakamarie/JavaScript/javascript_regex/)でまとめた
+
+本記事における正規表現の検証は[regex101](https://regex101.com/)にて言語`ECMAScript(JavaScript)`を指定して行った
+
+そのため、他言語では結果が異なる場合があるので注意すること
 
 ## メタ文字
 メタ文字とは正規表現の中で特別な意味を持つ文字や記号<br>
