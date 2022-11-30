@@ -7,7 +7,13 @@ tags:
 
 # OSSのライセンス
 
+## MIT
 
+## Apache2
+
+## LGPL
+
+`GNU Lesser General Public License`
 
 ## Reference
 [Open Source Initiative](https://opensource.org/)<br>
