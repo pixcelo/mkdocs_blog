@@ -253,6 +253,10 @@ if (1 < a && a < 10) { }
 
 ## 探索的テスト
 
+* 探索的テストとは、ソフトウェアの理解とテスト設計、テストの実行を同時に行う
+* 「この振る舞いがおかしくないか？」「処理が遅いのではないか？」等、どうあるべきかを考えながらテストを行う
+* 正常値と異常値を両方入れてみて、どうなるかを確かめてみたりとテストを行う担当者のスキルに依存する
+
 ## Reference
 * [単体テストにコードカバレッジを使用する](https://learn.microsoft.com/ja-jp/dotnet/core/testing/unit-testing-code-coverage?tabs=linux)
 * [coverlet.console](https://www.nuget.org/packages/coverlet.console)
