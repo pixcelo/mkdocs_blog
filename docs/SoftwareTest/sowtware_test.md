@@ -257,6 +257,16 @@ if (1 < a && a < 10) { }
 * 「この振る舞いがおかしくないか？」「処理が遅いのではないか？」等、どうあるべきかを考えながらテストを行う
 * 正常値と異常値を両方入れてみて、どうなるかを確かめてみたりとテストを行う担当者のスキルに依存する
 
+### 手順
+* クライテリア（どういうソフトウェアであるべきかの判定基準）を決める
+* 探索的タスクを実行する
+
+探索的テスト
+1. ターゲットソフトウェアを決定
+2. 機能をリストアップ
+3. 弱いエリア（バグが出そうな場所）を見つける
+4. 各機能のテスト及びバグの記録
+
 ## Reference
 * [単体テストにコードカバレッジを使用する](https://learn.microsoft.com/ja-jp/dotnet/core/testing/unit-testing-code-coverage?tabs=linux)
 * [coverlet.console](https://www.nuget.org/packages/coverlet.console)
