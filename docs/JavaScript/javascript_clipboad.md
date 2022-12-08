@@ -4,7 +4,9 @@ tags:
 ---
 
 # JavaScript URLをクリップボードにコピーする
+`Navigator.clipboard`を使用する
 
+`execCommand`は[コチラ](https://developer.mozilla.org/ja/docs/Web/API/Document/execCommand)で非推奨とされている
 ## Usage
 `writeText`を使用すると、ブラウザからクリップボード使用の可否について確認メッセージが表示される
 

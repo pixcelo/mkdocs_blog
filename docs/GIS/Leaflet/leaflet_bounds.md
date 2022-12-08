@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - Leaflet
+  - GIS
+---
+
 # Leaflet マーカーが範囲内かどうかを判定する
 `getBounds()`は`LatLngBounds`を返すメソッド<br>
 `e.g. [[40.712, -74.227],[40.774, -74.125]]`<br><br>
@@ -110,4 +117,4 @@ mapオブジェクトも`getBounds()`や`contains()`のメソッドを持つの�
 [Leaflet](https://leafletjs.com/reference.html#rectangle)<br>
 
 ## ソースコード
-[GitHub](https://github.com/pixcelo/Leaflet/blob/main/003/index.html)
+* [GitHub](https://github.com/pixcelo/Leaflet/blob/main/003/index.html)

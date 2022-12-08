@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - Leaflet
+  - GIS
+---
+
 # Leaflet.js でマーカーを表示する
 Leaflet.jsを使った地図とマーカー表示までの使い方
 
@@ -58,5 +65,4 @@ const marker = L.marker([51.5, -0.09]).addTo(map);
 ![map](img/leaflet_marker.png)<br/>
 
 ## ソースコード
-
-[GitHub](https://github.com/pixcelo/Leaflet/blob/main/001/index.html)
+* [GitHub](https://github.com/pixcelo/Leaflet/blob/main/001/index.html)

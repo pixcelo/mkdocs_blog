@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - Leaflet
+  - GIS
+---
+
 # Leaflet.js でマーカーをカスタマイズする
 Leaflet.jsのマーカーを任意に変更する方法
 CSSや画像を使うことで地図上に好きなものを置ける
@@ -27,5 +34,4 @@ const divMarker = L.marker([51.5, -0.09], {icon: divIcon}).addTo(map);
 ![map](img/leaflet_icon_div.png)<br/>
 
 ## ソースコード
-
-[GitHub](https://github.com/pixcelo/Leaflet/blob/main/002/index.html)
+* [GitHub](https://github.com/pixcelo/Leaflet/blob/main/002/index.html)
