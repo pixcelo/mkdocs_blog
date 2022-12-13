@@ -1,6 +1,7 @@
 ---
 tags:
   - SQL
+  - SQLServer
 ---
 
 # SQLでデータベースのカラムを操作する【追加・変更・削除】
@@ -19,12 +20,12 @@ ALTER TABLE zoo ADD animal_name VARCHAR(20);
 
 ### カラムのデータ型の変更
 
-`ALTER TABLE テーブル名 MODIFY カラム名 新データ型;`
+`ALTER TABLE テーブル名 ALTER COLUMN カラム名 データ型;`
 
 作成済みのカラムのデータ型を変更
 
 ```sql
-ALTER TABLE zoo MODIFY animal_name VARCHAR(30);
+ALTER TABLE zoo ALTER COLUMN animal_name VARCHAR(30);
 ```
 
 ### カラムのデータ名とデータ型の変更
