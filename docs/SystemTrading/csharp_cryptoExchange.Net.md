@@ -17,16 +17,33 @@ nugetからインストール
 dotnet add package Binance.Net --version 8.3.0
 ```
 
-REST APIクライアントのインスタンスを作成する
+REST APIクライアントのインスタンスを作成
 ```cs
-// APIクライアント（現物取引）
-var client = new BinanceClient();
-var tickersResult = client.SpotApi.ExchangeData.GetTickersAsync();
+var binanceClient = new BinanceClient(new BinanceClientOptions()
+{
+    ApiCredentials = new ApiCredentials("API-KEY", "API-SECRET"),
+    SpotApiOptions = new BinanceApiClientOptions
+    {
+        BaseAddress = "ADDRESS",
+        RateLimitingBehaviour = RateLimitingBehaviour.Fail
+    },
+    UsdFuturesApiOptions = new BinanceApiClientOptions
+    {
+        ApiCredentials = new ApiCredentials("OTHER-API-KEY-FOR-FUTURES", "OTHER-API-SECRET-FOR-FUTURES")
+    }
+});
+```
+クライアントのインスタンスから、保持するエンドポイントやオプションを確認できる
 
-//
+![binanceClient](img/binacen.net_client.png)
+
+
+市場データを入手する
+```cs
+var spotSymbolData = await binanceClient.SpotApi.ExchangeData.GetExchangeInfoAsync();
 ```
 
-
+`CryptoExchange.Net`の[Document](https://jkorf.github.io/CryptoExchange.Net/Clients.html#processing-request-responses)にあるように、API通信のレスポンスは``
 
 ## Reference
 * [Binance.Net nuget](https://www.nuget.org/packages/Binance.Net)
