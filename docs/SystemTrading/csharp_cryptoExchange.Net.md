@@ -24,7 +24,6 @@ var binanceClient = new BinanceClient(new BinanceClientOptions()
     ApiCredentials = new ApiCredentials("API-KEY", "API-SECRET"),
     SpotApiOptions = new BinanceApiClientOptions
     {
-        BaseAddress = "ADDRESS",
         RateLimitingBehaviour = RateLimitingBehaviour.Fail
     },
     UsdFuturesApiOptions = new BinanceApiClientOptions
@@ -39,8 +38,59 @@ var binanceClient = new BinanceClient(new BinanceClientOptions()
 
 
 市場データを入手する
+
 ```cs
-var spotSymbolData = await binanceClient.SpotApi.ExchangeData.GetExchangeInfoAsync();
+// 通貨データを取得
+var callResult = await binanceClient.SpotApi.ExchangeData.GetExchangeInfoAsync();
+if(!callResult.Success)
+{
+    Console.WriteLine("Request failed: " + callResult.Error);
+    return;
+}
+
+var symbols = callResult.Data.Symbols;
+
+foreach (var symbol in symbols)
+{
+    Console.WriteLine(symbol.Name); // ETHBTC
+}
+```
+
+```cs
+// 通貨の価格データを取得
+var spotTickerData = await binanceClient.SpotApi.ExchangeData.GetTickersAsync();
+if(!spotTickerData.Success)
+{
+    Console.WriteLine("Request failed: " + spotTickerData.Error);
+    return;
+}
+
+var tickers = spotTickerData.Data;
+
+foreach (var ticker in tickers)
+{
+    Console.WriteLine(ticker.Symbol);    // ETHBTC
+    Console.WriteLine(ticker.LastPrice); // 0.07365800
+}
+```
+
+```cs
+// 板情報を取得
+var spotOrderBookData = await binanceClient.SpotApi.ExchangeData.GetOrderBookAsync("BTCUSDT");
+if(!spotOrderBookData.Success)
+{
+    Console.WriteLine("Request failed: " + spotOrderBookData.Error);
+    return;
+}
+
+var orderBook = spotOrderBookData.Data;
+Console.WriteLine(orderBook.Symbol); // BTCUSDT
+
+foreach (var bid in orderBook.Bids)
+{
+    Console.WriteLine(bid.Price);    // 17419.66000000
+    Console.WriteLine(bid.Quantity); // 0.20466000
+}
 ```
 
 `CryptoExchange.Net`の[Document](https://jkorf.github.io/CryptoExchange.Net/Clients.html#processing-request-responses)にあるように、API通信のレスポンスは``
