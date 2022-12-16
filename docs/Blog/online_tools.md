@@ -14,3 +14,6 @@ JsonをC#のクラスに変換する<br>
 
 クラス図、ER図などを描画してGoodleドライブやGitHubに保存できる<br>
 [draw.io](logical_thinking.jpg)
+
+画像の編集
+[Pixlr X](https://pixlr.com/jp/x/)

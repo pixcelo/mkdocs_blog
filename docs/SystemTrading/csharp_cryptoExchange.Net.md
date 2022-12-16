@@ -94,6 +94,7 @@ foreach (var bid in orderBook.Bids)
 ```
 
 ```cs
+// https://binance-docs.github.io/apidocs/spot/en/#old-trade-lookup-market_data
 // ヒストリカルデータ取得
 var spotTradeHistoryData = await binanceClient.SpotApi.ExchangeData.GetTradeHistoryAsync("BTCUSDT");
 if(!spotTradeHistoryData.Success)
@@ -107,15 +108,15 @@ var spotTradeHistory = spotTradeHistoryData.Data;
 foreach (var item in spotTradeHistory)
 {
     Console.WriteLine(item.OrderId);      // 2336973335
+    Console.WriteLine(item.Price);        // 17431.47000000
     Console.WriteLine(item.BaseQuantity); // 0.00070000
+    Console.WriteLine(item.TradeTime);    // 2022/12/15 19:36:46
     Console.WriteLine(item.BuyerIsMaker); // True
     Console.WriteLine(item.IsBestMatch);  // True
-    Console.WriteLine(item.Price);        // 17431.47000000
-    Console.WriteLine(item.TradeTime);    // 2022/12/15 19:36:46
 }
 ```
 
-`CryptoExchange.Net`の[Document](https://jkorf.github.io/CryptoExchange.Net/Clients.html#processing-request-responses)にあるように、API通信のレスポンスは``
+`CryptoExchange.Net`の[Document](https://jkorf.github.io/CryptoExchange.Net/Clients.html#processing-request-responses)にあるように、API通信のレスポンスは`WebCallResult`型で返る
 
 ## Reference
 * [Binance.Net nuget](https://www.nuget.org/packages/Binance.Net)
