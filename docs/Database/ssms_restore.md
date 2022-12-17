@@ -19,7 +19,7 @@ SSMS (`SQL Server Management Studio`)で、デバイスのバックアップフ�
 
 ![task restore](img/ssms_restore_2.png)
 
-オプション -> 復元オプション -> 既存のデータベースを上書きする（WITH REPLACEX) にチェック
+オプション -> 復元オプション -> 既存のデータベースを上書きする（WITH REPLACE) にチェック
 
 サーバー接続 -> 接続先データベースへの既存の接続を閉じる にチェック
 
