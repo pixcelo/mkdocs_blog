@@ -76,6 +76,7 @@ test('two plus two is four', () => {
 ```
 
 `toEqual()`は、オブジェクトや配列のすべての値を再起的にチェック
+
 ```javascript
 test('object assignment', () => {
     const data = {one: 1};
@@ -93,6 +94,11 @@ test('adding positive numbers is not zero', () => {
 });
 ```
 
+## DOM操作のテスト
+
+
+
 
 ## Reference
 * [Jest](https://jestjs.io/ja/)
+* [jsdom](https://github.com/jsdom/jsdom)
