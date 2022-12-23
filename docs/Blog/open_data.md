@@ -45,7 +45,9 @@ tags:
 ## Reference
 * [オープンデータ](https://www.digital.go.jp/resources/open_data/)
 * [データカタログサイト](https://www.data.go.jp/)
+* [オープンデータ100](https://cio.go.jp/opendata100)
 * [GISホームページ（国土交通省）](https://nlftp.mlit.go.jp/index.html)
 * [PLATEAU](https://www.mlit.go.jp/plateau/)
 * [Kaggle API](https://github.com/Kaggle/kaggle-api)
 * [Census Bureau](https://www.census.gov/data/developers/data-sets.html)
+* [MusicBrainz](https://musicbrainz.org/)
