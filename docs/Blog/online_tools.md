@@ -20,3 +20,6 @@ JsonをC#のクラスに変換する<br>
 
 Markdown表テーブル作成ツール
 [NotePM](https://notepm.jp/markdown-table-tool)
+
+テキストのXMLエスケープ
+[XmlEscape](https://devroom.azurewebsites.net/Devtools/XmlEscape)
