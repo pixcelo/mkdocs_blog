@@ -39,3 +39,4 @@ Console.WriteLine(b.GetType()); // System.Decimal
 * [Decimal 構造体](https://learn.microsoft.com/ja-jp/dotnet/api/system.decimal?view=net-7.0)
 * [組み込みの数値変換 (C# リファレンス)](https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/numeric-conversions)
 * [型テスト演算子とキャスト式 - is、as、typeof、casts型テスト演算子とキャスト式 - is、as、typeof、casts](https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-expression)
+* [Nullable<T>.GetValueOrDefault メソッド](https://learn.microsoft.com/ja-jp/dotnet/api/system.nullable-1.getvalueordefault?view=net-7.0)
