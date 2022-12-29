@@ -262,6 +262,8 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+## GitHub
+- [ソースコード](https://github.com/pixcelo/exampleMSTest)
 
 ## Reference
 - [チュートリアル: マネージド コードの単体テストを作成し、実行する](https://learn.microsoft.com/ja-jp/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)
