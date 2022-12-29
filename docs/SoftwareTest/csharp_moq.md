@@ -19,5 +19,6 @@ dotnet add package Moq --version 4.18.2
 
 
 ## Reference
-[Moq](https://www.nuget.org/packages/Moq/)<br>
-[Github Moq](https://github.com/moq/moq4)<br>
+- [Moq](https://www.nuget.org/packages/Moq/)
+- [Github Moq](https://github.com/moq/moq4)
+- [AdventureWorks サンプル データベース](https://learn.microsoft.com/ja-jp/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
