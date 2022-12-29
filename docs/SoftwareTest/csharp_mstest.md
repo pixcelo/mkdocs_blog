@@ -51,6 +51,8 @@ namespace Prime.UnitTests.Services
 
 ## デモコード
 
+公式の[チュートリアル](https://learn.microsoft.com/ja-jp/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)より`BankAccount.cs`
+
 ```cs title="BankAccount.cs"
 using System;
 
@@ -118,6 +120,83 @@ namespace BankAccountNS
     }
 }
 ```
+
+`BankAccount.cs`の`Debit()`は、口座から現金が引き出されるときに呼び出される
+
+`Debit()`の動作を検証する単体テストメソッドを記述する
+
+確認する必要がある3つの動作
+
+- 引き落とし金額が残高を上回る場合、`ArgumentOutOfRangeException` をスローする
+- 引き落とし金額が 0 未満の場合、`ArgumentOutOfRangeException` をスローする
+- 引き落とし金額が有効な場合、口座残高から借方金額を減算する
+
+テストプロジェクトを作成し、Bankプロジェクトの参照を追加する
+
+```cs title="BankAccountTests.cs"
+using BankAccountNS;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace BankTests
+{
+    [TestClass]
+    public class BankAccountTests
+    {
+        [TestMethod]
+        [Description("正しい金額 (口座残高未満かつ 0 を上回る金額) によって口座からお金が引き出されることを確認する")]
+        public void Debit_WithValidAmount_UpdatesBalance()
+        {
+            // Arrange
+            double beginningBalance = 11.99;
+            double debitAmount = 4.55;
+            double expected = 7.44;
+            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+
+            // Act
+            account.Debit(debitAmount);
+
+            // Assert
+            double actual = account.Balance;
+            Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");
+        }
+    }
+}
+```
+
+テストメソッドのAssertメソッドの構文は、下記の通り
+
+```cs
+// Assertメソッドの構文
+Assert.AreEqual(expected, actual, message)
+
+// expected: 期待値
+// actual:   実際の値
+// message:  アサーションが失敗した時のメッセージ
+```
+
+`BankAccountTests`を実行すると、テストが失敗する
+
+```
+Assert.AreEqual に失敗しました。指定する値 <7.44> と実際の値 <16.54> との間には <0.001> 以内の差が必要です。Account not debited correctly
+```
+
+![testmethod failed](img/mstest_testmethod_failed.png)
+
+テストメソッドの実行によって、`Debit()`で引き出された後は残高が減っているはずが、逆に残高が増えてしまっていることが分かった
+
+バグを修正する
+
+```cs title="BankAccount.cs"
+// Before
+m_balance += amount;
+
+// After
+m_balance -= amount;
+```
+
+バグを修正後にテストメソッドを再度実行すると、今度はテストが成功する
+
+![testmethod failed](img/mstest_testmethod_success.png)
 
 ## Reference
 - [チュートリアル: マネージド コードの単体テストを作成し、実行する](https://learn.microsoft.com/ja-jp/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)
