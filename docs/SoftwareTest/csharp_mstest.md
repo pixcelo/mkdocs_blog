@@ -231,6 +231,37 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ![testmethod success](img/mstest_testmethod_success_exception.png)
 
+テストメソッドのリファクタリング
+
+意図したメソッドで例外が発生したかどうかをテストできるようにする
+
+```cs
+[TestMethod]
+[Description("引き落とし金額が残高よりも大きい場合にArgumentOutOfRangeException をスローすることを確認する")]
+public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
+{
+    // Arrange
+    double beginningBalance = 11.99;
+    double debitAmount = 20.0;
+    BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+
+    // Act
+    try
+    {
+        account.Debit(debitAmount);
+    }
+    catch (System.ArgumentOutOfRangeException e)
+    {
+        // Assert
+        StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
+        return;
+    }
+
+    // 例外が発生しなかった場合、テストメソッドを失敗させる
+    Assert.Fail("The expected exception was not thrown.");
+}
+```
+
 
 ## Reference
 - [チュートリアル: マネージド コードの単体テストを作成し、実行する](https://learn.microsoft.com/ja-jp/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)
