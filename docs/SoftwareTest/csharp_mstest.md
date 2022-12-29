@@ -196,7 +196,41 @@ m_balance -= amount;
 
 バグを修正後にテストメソッドを再度実行すると、今度はテストが成功する
 
-![testmethod failed](img/mstest_testmethod_success.png)
+![testmethod success](img/mstest_testmethod_success.png)
+
+例外の発生をテストする
+
+```cs
+[TestMethod]
+[Description("引き落とし金額が０未満の場合にArgumentOutOfRangeException をスローすることを確認する")]
+public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
+{
+    // Arrange
+    double beginningBalance = 11.99;
+    double debitAmount = -100.00;
+    BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
+}
+
+[TestMethod]
+[Description("引き落とし金額が残高よりも大きい場合にArgumentOutOfRangeException をスローすることを確認する")]
+public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
+{
+　　 // Arrange
+    double beginningBalance = 11.99;
+    double debitAmount = 51.00;
+    BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
+}
+```
+テストメソッドを実行して、テストの成功を確認する
+
+![testmethod success](img/mstest_testmethod_success_exception.png)
+
 
 ## Reference
 - [チュートリアル: マネージド コードの単体テストを作成し、実行する](https://learn.microsoft.com/ja-jp/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022)
