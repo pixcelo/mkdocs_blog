@@ -211,5 +211,17 @@ git merge [ブランチ名]
 マージの衝突（CONFLICT）が起きなければ、マージ完了<br>
 mainが最新のものになっているか確認<br>
 
+リモートリポジトリの最新の状態を取得する
+
+```
+git fetch
+```
+
+取得したリモートリポジトリをローカルリポジトリとマージする
+
+```
+git merge
+```
+
 ## Reference
-[git](https://git-scm.com/doc)<br>
+- [git](https://git-scm.com/doc)<br>
