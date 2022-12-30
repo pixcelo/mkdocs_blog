@@ -45,7 +45,7 @@ e.g. `before:2022-12-1`, `after:2022-10-5`
 ## 英語で検索する
 ### 英語版Googleで検索
 下記URLから英語圏のサイトを対象に検索する<br>
-https://www.google.com/?gl=us&hl=en&gws_rd=cr&pws=0
+[https://www.google.com/?gl=us&hl=en&gws_rd=cr&pws=0](https://www.google.com/?gl=us&hl=en&gws_rd=cr&pws=0)
 
 ### 英語でキーワード検索
 日本語で見つけられない場合でも、英語でググるとHitする<br>
