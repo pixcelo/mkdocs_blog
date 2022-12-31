@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # Python PandasのDataFrame操作方法まとめ
 
 ##基本操作

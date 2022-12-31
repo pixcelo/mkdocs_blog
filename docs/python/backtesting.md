@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # Pythonライブラリ Backtesting.py
 Pythonで米国株の相関係数を求める方法をまとめる
 

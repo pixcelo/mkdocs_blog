@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # Pythonでmongodbを使用する
 
 ## python用クライアントのインストール

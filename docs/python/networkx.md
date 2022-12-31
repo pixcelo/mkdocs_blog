@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # networkx
 networkxはネットワーク分析に用いるpython用ライブラリ
 
