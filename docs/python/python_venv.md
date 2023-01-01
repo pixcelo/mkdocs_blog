@@ -10,17 +10,23 @@ tags:
 
 ## Usage
 
-envフォルダ作成
+`python3 -m venv [仮想環境名]` で仮想環境のフォルダを作成
 ```
 python3 -m venv env
 ```
 
-env有効化
+`source [仮想環境名]/bin/activate` で仮想環境を有効化
 ```
-source venv/bin/activate
+source env/bin/activate
 ```
+- ターミナルの表示が([仮想環境名])となる
+- `source`の代わりに`.`でも仮想環境を有効化できる
+```
+. env/bin/activate
+```
+<br><br>
 
-env無効化
+`deactivate` で仮想環境をdeactivate無効化
 ```
 deactivate
 ```
@@ -45,4 +51,5 @@ pip-selfcheck.json
 
 ## Reference
 - [venv](https://docs.python.org/ja/3/library/venv.html)
+- [virtualenv](https://www.python.jp/install/macos/virtualenv.html)
 - [.gitignore](https://github.com/github/gitignore/blob/main/Global/VirtualEnv.gitignore)
