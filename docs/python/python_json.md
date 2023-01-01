@@ -27,12 +27,12 @@ jsonが多層の場合
 ```json
 {
     "key1":{
-        "name":"Tom",
+        "name": "Tom",
         "number": 1
     },
 
     "key2":{
-        "name":"Bob",
+        "name": "Bob",
         "number": 2
     }
 }
