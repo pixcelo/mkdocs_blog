@@ -15,11 +15,14 @@ JsonをC#のクラスに変換する<br>
 クラス図、ER図などを描画してGoodleドライブやGitHubに保存できる<br>
 [draw.io](logical_thinking.jpg)
 
-画像の編集
+画像の編集<br>
 [Pixlr X](https://pixlr.com/jp/x/)
 
-Markdown表テーブル作成ツール
+Markdown表テーブル作成ツール<br>
 [NotePM](https://notepm.jp/markdown-table-tool)
 
-テキストのXMLエスケープ
+テキストのXMLエスケープ<br>
 [XmlEscape](https://devroom.azurewebsites.net/Devtools/XmlEscape)
+
+.gitignore ジェネレーター<br>
+[gitignore.io](https://www.toptal.com/developers/gitignore)

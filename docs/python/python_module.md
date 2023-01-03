@@ -8,8 +8,16 @@ tags:
 Pythonでクラスをモジュール化して、別のファイルから呼び出す
 
 ## Usage
-クラスをモジュールとして定義
+
+### import
 ```py
+import [クラス名]
+import [関数名]
+import [モジュール名].[関数名]
+```
+
+クラスをモジュールとして定義
+```py title="person.py"
 class Person:
     def __init__(self, name):
         self.name = name
@@ -24,6 +32,11 @@ import person
 
 man = person.Person('Tom')
 print(man.get_name())
+```
+
+### from import
+```py
+from [モジュール名] import [関数名]
 ```
 
 ## Reference
