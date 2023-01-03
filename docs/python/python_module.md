@@ -10,9 +10,16 @@ Pythonでクラスをモジュール化して、別のファイルから呼び�
 ## Usage
 
 ### import
+
 ```py
 import [クラス名]
+```
+
+```py
 import [関数名]
+```
+
+```py
 import [モジュール名].[関数名]
 ```
 

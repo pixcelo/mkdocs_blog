@@ -26,6 +26,9 @@ pip install joblib
 ```
 
 ## Usage
+
+### Parallelクラス
+`Parallel`クラスで処理を並列化する
 ```py
 import math
 import time
@@ -39,5 +42,25 @@ t1 = time.time()
 print(t2-t1) # 5.432750225067139
 ```
 
+### Memoryクラス
+`Memory`クラスでキャッシュする
+```py
+from joblib import Memory
+
+# ディレクトリを指定
+cachedir = './cache'
+memory = Memory(cachedir, verbose=0)
+
+# デコレータを定義
+@memory.cache
+def f(x):
+    print('Running f(%s)' % x)
+    return x
+
+print(f(1)) # 2回目は出力の結果のみが返る
+```
+
 ## Reference
 - [jonlib](https://joblib.readthedocs.io/en/latest/)
+- [Parallel](https://joblib.readthedocs.io/en/latest/parallel.html)
+- [Memory](https://joblib.readthedocs.io/en/latest/memory.html#module-joblib.memory)
