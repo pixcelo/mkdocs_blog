@@ -3,7 +3,7 @@ tags:
   - Python
 ---
 
-# Python joblibでタスクを並列化する
+# Python joblibを用いた高速化(処理の並列化・キャッシュ)
 
 `joblib`は、大規模なデータを効率的に扱うためのPythonライブラリ
 
@@ -28,7 +28,9 @@ pip install joblib
 ## Usage
 
 ### Parallelクラス
+
 `Parallel`クラスで処理を並列化する
+
 ```py
 import math
 import time
@@ -43,7 +45,9 @@ print(t2-t1) # 5.432750225067139
 ```
 
 ### Memoryクラス
+
 `Memory`クラスでキャッシュする
+
 ```py
 from joblib import Memory
 
@@ -57,7 +61,7 @@ def f(x):
     print('Running f(%s)' % x)
     return x
 
-print(f(1)) # 2回目は出力の結果のみが返る
+print(f(1)) # 関数に同じ引数を渡した場合、2回目以降は出力の結果のみが返る
 ```
 
 ## Reference
