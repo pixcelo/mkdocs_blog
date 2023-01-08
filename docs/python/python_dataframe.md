@@ -52,8 +52,8 @@ print(len(df))
 
 ### データ型の確認
 ```py
-data = pd.read_csv('data.csv')
-print(data.info())
+df = pd.read_csv('data.csv')
+df.info()
 # non-null 欠損値を確認できる
 # object 文字列が存在する
 ```

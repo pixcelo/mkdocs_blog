@@ -77,9 +77,14 @@ df.diff(periods=3)
 5	3.0	6.0	27.0
 ```
 
+#### 補足 変化率はpct_change
+
+差分ではなく、変化率をみたい場合は`pct_change()`を使う
+
 ## Gist
 - [diff.ipynb](https://gist.github.com/pixcelo/28263e36ae349ea69f36e9522bf100f2)
 
 ## Reference
 - [pandas](https://pandas.pydata.org/docs/)
 - [DataFrame.diff](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.diff.html#pandas.DataFrame.diff)
+- [DataFrame.pct_change](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.pct_change.html)
