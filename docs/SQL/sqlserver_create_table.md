@@ -31,6 +31,17 @@ CREATE TABLE [d_user](
 )
 GO
 ```
+### 複合キーを設定してテーブル作成
+
+```sql
+CREATE TABLE [d_user](
+	[user_id] [int] NOT NULL,
+	[type] [int] NOT NULL,
+	[user_name] [varchar](20) NULL,
+	CONSTRAINT PK_D_USER PRIMARY KEY ([user_id], [type])
+)
+GO
+```
 
 - SQLコマンドは、大文字・小文字の区別しない
 - 指定できるデータ型は、参考リンクを参照
