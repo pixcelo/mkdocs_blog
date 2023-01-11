@@ -15,8 +15,10 @@ tags:
 決定木を`Gradient Boosting` (勾配ブースティング)によりアンサンブル学習したもの
 
 - 機械学習におけるツリーベースの分析アルゴリズム
-- 教師あり学習によるデータ分析
-- 目的変数に応じて説明変数を「分類」する
+- 「教師あり学習」によるデータ分析
+- 目的変数に応じて説明変数を予測する「分類」(y=0 or 1)
+
+※ `Boosting`とは、複数の決定木を作ることで予測精度を高める手法のこと
 
 ![LightGBM](img/LightGBM_leaf_wise_tree_growth.png)
 
@@ -95,6 +97,8 @@ preds
 accuracy = sum(Y_test['target']==preds) / len(Y_test)
 accuracy # 0.9166666666666666 => 91%の正解率
 ```
+## Gist
+- [lightGBM.ipynb](https://gist.github.com/pixcelo/c44c19d707f5b5f300cff03b43a24132)
 
 ## Reference
 - [LightGBM](https://github.com/microsoft/LightGBM)

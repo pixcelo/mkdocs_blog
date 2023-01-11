@@ -13,9 +13,11 @@
 * C#
 * .NET
 * JavaScirpt
+* Python
 * etc..
 
 ## Site
-[GitHub](https://github.com/pixcelo)<br>
-[Qiita](https://qiita.com/te-k)<br>
-[Twitter](https://twitter.com/te_tsk)
+- [GitHub](https://github.com/pixcelo)
+- [Gist](https://gist.github.com/pixcelo)
+- [Qiita](https://qiita.com/te-k)
+- [Twitter](https://twitter.com/te_tsk)
