@@ -74,7 +74,32 @@ Waiting for a connection...
 
 サーバーが起動できた
 
+```
+Server has started on 127.0.0.1:13000, Waiting for a connection...
+A client connected.
+=====Handshaking from client=====
+GET / HTTP/1.1
+Host: 127.0.0.1:13000
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+Origin: null
+Sec-WebSocket-Version: 13
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ja,en;q=0.9
+Sec-GPC: 1
+Sec-WebSocket-Key: LQIinwK+MLKnnnTo0PfZMw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+
+WebSocket rocks
+
+test message
+```
 
 ## Reference
 - [C# で WebSocket サーバーを記述する](https://developer.mozilla.org/ja/docs/Web/API/WebSockets_API/Writing_WebSocket_server)
 - [TcpListener クラス](https://learn.microsoft.com/ja-jp/dotnet/api/system.net.sockets.tcplistener?view=net-7.0)
+- [TcpClient クラス](https://learn.microsoft.com/ja-jp/dotnet/api/system.net.sockets.tcpclient?view=net-7.0)
