@@ -24,7 +24,7 @@ tags:
 dotnet new console
 ```
 
-### Server.cs作成
+### サーバーを作成
 
 - WebSocketはTCPプロトコルにて接続を行う
 - `TcpListener`はTCPネットワーク クライアントからの接続をリッスンするクラス
@@ -73,6 +73,14 @@ Waiting for a connection...
 ```
 
 サーバーが起動できた
+
+## クライアントを作成
+
+TCP接続するクライアントを作成
+
+```html
+
+```
 
 ```
 Server has started on 127.0.0.1:13000, Waiting for a connection...
