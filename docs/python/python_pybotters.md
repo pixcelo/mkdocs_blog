@@ -26,7 +26,7 @@ apis = {
 }
 ```
 
-`pybotters.Client`の引数に`apis`を指定しない場合、実行ファイルと同じディレクトリにある`apis.json`を読み込む
+`pybotters.Client`の引数に`apis`を指定しない場合、Pythonの実行カレントディクレリに配置した`apis.json`を読み込む
 
 [apis の暗黙的な読み込み](https://pybotters.readthedocs.io/ja/latest/Advanced-Usage.html#apis)
 
@@ -105,9 +105,11 @@ pip install --upgrade pybotters
 
 ## Reference
 - [pybotters](https://github.com/MtkN1/pybotters)
+- [pybotters latest](https://pybotters.readthedocs.io/ja/latest/index.html)
 - [pybotters wiki](https://github.com/MtkN1/pybotters/wiki)
 - [pybotters PDF](https://pybotters.readthedocs.io/_/downloads/ja/latest/pdf/)
 - [bybit Example](https://github.com/MtkN1/pybotters/wiki/Example)
 - [bybit.py](https://github.com/MtkN1/pybotters/blob/main/pybotters/models/bybit.py)
 - [BYBIT testnet](https://testnet.bybit.com/ja-JP/)
+- [bybit Base endpoints](https://bybit-exchange.github.io/docs/futuresV2/linear/#t-websocketauthentication)
 - [orderBookL2_25](https://bybit-exchange.github.io/docs/futuresV2/inverse/#t-publictopics)
