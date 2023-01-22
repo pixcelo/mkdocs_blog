@@ -56,13 +56,43 @@ async def main():
         while True:
             orderbook = store.orderbook.find()
             print(orderbook)
-            await store.orderbook.wait()
 
 if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
         pass
+```
+
+## データのアクセス方法
+
+websocketで受信したデータは`DataStore`クラスに格納される
+
+`store = pybotters.BybitUSDTDataStore()`
+
+`DataStore`クラスへのアクセスは`find()`を使う
+
+```py
+# orderbookの全てを表示
+print(store.orderbook.find())
+
+# orderbookのBuyのみ表示
+print(store.orderbook.find({'side': 'Buy'}))
+```
+
+`pandas`のデータフレームに入れる
+
+```py
+df = pd.DataFrame(store.orderbook.find())
+print(df)
+
+       price  symbol         id  side    size
+0   22809.50  BTCUSD  228095000   Buy  241867
+1   22809.00  BTCUSD  228090000   Buy  105768
+2   22821.50  BTCUSD  228215000  Sell     451
+3   22810.00  BTCUSD  228100000  Sell  113707
+4   22804.50  BTCUSD  228045000   Buy   55545
+5   22804.00  BTCUSD  228040000   Buy   52485
 ```
 
 ## Update
