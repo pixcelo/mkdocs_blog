@@ -36,6 +36,26 @@ leafletImage(map, function(err, canvas) {
 
 `'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAJYCAYAAA....`
 
+`canvas`なので`blob`オブジェクトを扱うこともできる
+
+```js
+canvas.toBlob(function(blob) {
+  var newImg = document.createElement("img"),
+      url = URL.createObjectURL(blob);
+
+  newImg.src = url;
+  document.body.appendChild(newImg);
+});
+```
+
+`FormData`に入れてPOSTすれば、サーバーサイドでバイナリをファイルとして保存できる
+
+```js
+const formData = new FormData();
+formData.append("image", canvas.toDataURL());
+```
+
 ## Reference
 - [Leaflet Plugins](https://leafletjs.com/plugins.html)
 - [leaflet-image](https://github.com/mapbox/leaflet-image)
+- [HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement/toDataURL)
