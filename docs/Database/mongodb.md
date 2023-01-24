@@ -1,6 +1,13 @@
+---
+tags:
+  - MongoDB
+---
+
 # MongDB
-MongDBをmacにインストールしてから実行するまでのまとめ<br/>
-MongoDBの公式にMongoDB大学という学習用のサイトも参考にできる<br/>
+
+- MongDBをmacにインストールしてから実行するまでのまとめ
+- MongoDBの公式にMongoDB大学という学習用のサイトも参考にできる
+
 https://university.mongodb.com
 
 ## 実行環境
@@ -125,9 +132,9 @@ json、csv、tsv等のファイル形式をインポートできる
 * –file 入力ファイル名
 * –headerline ヘッダ行の無視
 
-# GUIツール
+## GUIツール
 * [MongoDB Compass](https://www.mongodb.com/products/compass)
 * [Robo 3T](https://robomongo.org/)
-<br/>
 
-色々あるので自分好みのものを探してみる
+## Reference
+- [MongoDB](https://www.mongodb.com/ja-jp)

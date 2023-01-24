@@ -59,3 +59,5 @@ formData.append("image", canvas.toDataURL());
 - [Leaflet Plugins](https://leafletjs.com/plugins.html)
 - [leaflet-image](https://github.com/mapbox/leaflet-image)
 - [HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement/toDataURL)
+- [HTMLCanvasElement.toBlob()](https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement/toBlob)
+- [URL.createObjectURL()](https://developer.mozilla.org/ja/docs/Web/API/URL/createObjectURL)
