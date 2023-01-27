@@ -84,7 +84,8 @@ arry.reduce((previousValue, currentValue) => {
     // do something...
 }, initialValue);
 ```
-
+## Gist
+- [ソースコード](https://gist.github.com/pixcelo/23e7c4bbc3aa0d0eedbb9f90dee61f4f)
 
 ## Reference
 - [.reduce()](https://js.studio-kingdom.com/javascript/array/reduce)
