@@ -44,6 +44,8 @@ shape: (3, 5)
 └────────────┴──────────────┴─────────────┴──────────────┴─────────────┘
 ```
 
+pandasとの比較を[coming from pandas](https://pola-rs.github.io/polars-book/user-guide/coming_from_pandas.html)から確認できる
+
 ## Reference
 - [polars](https://www.pola.rs/)
 - [Getting started](https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html)

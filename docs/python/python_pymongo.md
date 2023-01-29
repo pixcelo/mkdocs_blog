@@ -3,7 +3,7 @@ tags:
   - Python
 ---
 
-# Python ライブラリpymongoでMongoDBに接続する
+# Python ライブラリ PyMongoでMongoDBに接続する
 
 ## Install
 
@@ -38,7 +38,8 @@ for data in collection.find():
 MongoDBのクエリと同じようにpythonで問い合わせができる
 
 ### pandasのデータフレームに格納する
-```
+
+```py
 df = pd.DataFrame(collection.find())
 print(df.head())
 ```
