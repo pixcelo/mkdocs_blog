@@ -17,7 +17,7 @@ tags:
 const worker = new Worker("worker.js");
 
 // workerへデータを送信
-onst obj = {id: 1, name: 'Tom'};
+const obj = {id: 1, name: 'Tom'};
 worker.postMessage(obj);
 
 // workerからデータを受信

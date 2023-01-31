@@ -7,6 +7,8 @@ tags:
 
 ## Usage
 
+`fetch`の返り値は、`Promise`オブジェクト
+
 ```js
 async function fetchJson() {
     try {
