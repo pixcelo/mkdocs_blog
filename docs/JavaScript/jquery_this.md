@@ -12,7 +12,7 @@ tags:
 
 ## Usage
 ```html
-<button type="button" class="btn">click</button>
+<button type="button" id="btn-id" class="btn" value="1">click</button>
 ```
 
 `$(this)`をコンソールに出力する
@@ -33,7 +33,22 @@ length
 Object(0)
 ```
 
+`attr()`で要素の属性を取得する
 
+```js
+$(this).attr('id')
+// 'btn-id'
+
+$(this).attr('class')
+// 'btn'
+```
+
+`val()`で要素の`value`を取得する
+
+```js
+$(this).val()
+// '1'
+```
 
 ## Reference
 - [jQuery](https://jquery.com/)
