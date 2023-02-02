@@ -54,6 +54,9 @@ $(this).val()
 ## 属性・値を変更する
 
 ```js
+// 値を変更
+$(this).val('new-value');
+
 // 属性を変更
 $(this).attr('name', 'new-name');
 
