@@ -11,7 +11,13 @@ tags:
 
 ## Usage
 
+他のテーブルの値を使って、アップデートを行う
+
 ```sql
+UPDATE example_table
+SET example_column = other_column
+FROM other_table
+WHERE example_table.id = other_table.id
 ```
 
 ## Reference
