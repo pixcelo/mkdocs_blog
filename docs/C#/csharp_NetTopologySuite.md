@@ -1,6 +1,7 @@
 ---
 tags:
   - C#
+  - GIS
 ---
 
 # C# NetTopologySuiteでshapeファイルの情報を取得する
@@ -25,7 +26,7 @@ NuGet\Install-Package NetTopologySuite.IO.Esri.Shapefile -Version 1.0.0
 
 ## Usage
 
-
+`.shp`ファイルのパスを渡すことで読み込む
 
 ```cs
 string shpPath = "sample.shp";
@@ -40,6 +41,9 @@ foreach (var feature in Shapefile.ReadAllFeatures(shpPath))
     Console.WriteLine();
 }
 ```
+
+- `feature.Attributes`のコレクションには、ArcMapやQGISなどで読み込める属性テーブルの情報が参照できる
+- `feature.Geometry`には、平面直角座標系の位置情報やジオメトリタイプ等のデータが確認できる
 
 ## Reference
 - [NetTopologySuite](https://github.com/NetTopologySuite/NetTopologySuite)
