@@ -1,0 +1,35 @@
+---
+tags:
+  - VBA
+---
+
+# Excel VBA Assertメソッドの動き
+
+## Usage
+
+
+```vb
+Option Explicit
+
+Private blnAssert As Boolean
+Private intNumber As Integer
+
+Private Sub Command1_Click()
+    blnAssert = Not blnAssert
+    intNumber = IIf(intNumber <> 0, 0, 1)
+    Command1.Caption = intNumber
+End Sub
+
+Private Sub Command2_Click()
+    Debug.Assert blnAssert
+End Sub
+
+Private Sub Form_Load()
+    Command1.Caption = intNumber
+    Command2.Caption = "Assert Tester"
+End Sub
+```
+
+
+## Reference
+- [Assert メソッド](https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/assert-method)
