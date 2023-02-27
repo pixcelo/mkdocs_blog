@@ -33,7 +33,7 @@ Private Sub Form_Load()
 End Sub
 ```
 
-VBEは条件つきブレークポイントがないので、代替として利用できる
+VBEには条件つきブレークポイントがないため、代替として利用できる
 
 ## Reference
 - [Assert メソッド](https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/assert-method)
