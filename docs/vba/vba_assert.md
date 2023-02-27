@@ -7,8 +7,11 @@ tags:
 
 ## Usage
 
+- `Assert`は、条件が`False`の場合のみ処理を中断する
+- 明示的に`Assert`を用いることで編集時のドキュメント機能の役割も担う
+- 開発環境でのみ動作する
 
-```vb
+```VBScript
 Option Explicit
 
 Private blnAssert As Boolean
@@ -30,6 +33,7 @@ Private Sub Form_Load()
 End Sub
 ```
 
+VBEは条件つきブレークポイントがないので、代替として利用できる
 
 ## Reference
 - [Assert メソッド](https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/assert-method)
