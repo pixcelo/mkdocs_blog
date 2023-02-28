@@ -24,32 +24,18 @@ tags:
 - ダウンサンプリング … より低い解像度（長い周期）に変換し、データ量は減少する
 
 ```py
-start, end = '2000-10-01 23:30:00', '2000-10-02 00:30:00'
-rng = pd.date_range(start, end, freq='7min')
-ts = pd.Series(np.arange(len(rng)) * 3, index=rng)
+import pandas as pd
 
-# ts
-2000-10-01 23:30:00     0
-2000-10-01 23:37:00     3
-2000-10-01 23:44:00     6
-2000-10-01 23:51:00     9
-2000-10-01 23:58:00    12
-2000-10-02 00:05:00    15
-2000-10-02 00:12:00    18
-2000-10-02 00:19:00    21
-2000-10-02 00:26:00    24
-Freq: 7T, dtype: int64
-```
+df = pd.DataFrame({
+    'date': pd.date_range('2022-01-01', periods=10, freq='D'),
+    'value': range(10)
+})
 
-`resample()`
-```py
-ts.resample('17min').sum()
+# アップサンプリング
+df_upsampled = df.set_index('date').resample('12H').asfreq()
 
-2000-10-01 23:30:00     9
-2000-10-01 23:45:00    21
-2000-10-02 00:00:00    33
-2000-10-02 00:15:00    45
-Freq: 15T, dtype: int64
+# ダウンサンプリング
+df_downsampled = df.set_index('date').resample('2D').mean()
 ```
 
 ## Reference
