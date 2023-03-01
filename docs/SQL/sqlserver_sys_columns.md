@@ -21,6 +21,8 @@ SELECT
     ,c.name                  AS column_name
     ,type_name(user_type_id) AS data_type
     ,max_length
+    ,c.precision             AS 有効桁数_整数
+    ,c.scale                 AS 小数点桁数
     ,CASE WHEN is_nullable = 1 THEN '-' ELSE N'〇' END AS not_null
 FROM
     sys.objects t
