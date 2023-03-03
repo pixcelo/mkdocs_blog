@@ -14,6 +14,9 @@ tags:
 ![class module]()
 
 ```VBScript
+Option Explicit
+
+
 
 ```
 
