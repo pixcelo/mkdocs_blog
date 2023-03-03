@@ -9,9 +9,9 @@ tags:
 
 ## Usage
 
-クラスモジュールを作るには、挿入からクラスモジュールを選択する
+クラスモジュールを作るには、挿入 -> クラスモジュールを選択
 
-![class module]()
+![class module](img/vba_cls.png)
 
 ```VBScript
 Option Explicit
