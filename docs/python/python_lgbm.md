@@ -97,6 +97,26 @@ preds
 accuracy = sum(Y_test['target']==preds) / len(Y_test)
 accuracy # 0.9166666666666666 => 91%の正解率
 ```
+
+LightGBM の出力結果
+```
+[LightGBM] [Info] Number of positive: 1458, number of negative: 1389
+[LightGBM] [Warning] Auto-choosing col-wise multi-threading, the overhead of testing was 0.014959 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 17651
+[LightGBM] [Info] Number of data points in the train set: 2847, number of used features: 74
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.512118 -> initscore=0.048482
+[LightGBM] [Info] Start training from score 0.048482
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+Training until validation scores don't improve for 10 rounds
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+Early stopping, best iteration is:
+[86]	training's binary_logloss: 0.0135884	valid_1's binary_logloss: 0.0708282
+Accuracy: 0.9789325842696629
+```
+
 ## Gist
 - [lightGBM.ipynb](https://gist.github.com/pixcelo/c44c19d707f5b5f300cff03b43a24132)
 
