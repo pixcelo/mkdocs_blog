@@ -19,6 +19,8 @@ Cythonは、PythonにC言語の型が導入されたプログラミング言語
 ## Usage
 
 
+型を定義してコンパイルするだけでも、高速化の恩恵を享受できる
+
 ## Reference
 - [Cython](https://cython.org/)
 - [Cython’s Documentation](https://cython.readthedocs.io/en/latest/)
