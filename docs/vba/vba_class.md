@@ -13,17 +13,22 @@ tags:
 
 ![class module](img/vba_cls.png)
 
-```VBScript
-Option Explicit
-
-
-
-```
-
 クラスを呼び出し、使用する
 
 ```VBScript
+Option Explicit
 
+Public Sub Class_Initialize()
+    With Application
+        .ScreenUpdating = False
+    End With
+End Sub
+
+Public Sub Class_Terminate()
+    With Application
+        .ScreenUpdating = True
+    End With
+End Sub
 ```
 
 ## Reference
