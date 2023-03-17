@@ -39,5 +39,17 @@ using (var package = new ExcelPackage(file))
 }
 ```
 
+- Byte配列として返却する
+
+```cs
+using (var package = new ExcelPackage())
+{
+    var ws = package.Workbook.Worksheets.Add("sheet1");
+    ws.Cells["A1"].Value = "Hello World";
+
+    byte[] bytes = package.GetAsByteArray();
+}
+```
+
 ## Reference
 - [EPPlus SampleApp](https://github.com/JanKallman/EPPlus/tree/master/SampleApp)
