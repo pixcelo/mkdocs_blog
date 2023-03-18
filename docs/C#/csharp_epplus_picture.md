@@ -27,5 +27,36 @@ using (Image image = Image.FromFile("sample.jpg"))
 }
 ```
 
+セルに合わせて画像を調整する
+
+```cs
+private void FitPictureSize(ExcelPicture pic, Image img, int cellHeight, int cellWidth)
+{
+    double perSize = 1.0;
+    int imgHeight = img.Height;
+    int imgWidth = img.Width;
+
+    if (img.Size.Height > img.Size.Width)
+    {
+        if (imgHeight > cellHeight)
+        {
+            perSize = 1.0 * cellHeight / imgHeight;
+        }
+    }
+    else
+    {
+        if (imgWidth > cellWidth)
+        {
+            perSize = 1.0 * cellWidth / imgWidth;
+        }
+    }
+
+    imgHeight = Decimal.ToInt32((decimal)(imgHeight * perSize));
+    imgWidth = Decimal.ToInt32((decimal)(imgWidth * perSize));
+
+    pic.SetSize((int)imgWidth, (int)imgHeight);
+}
+```
+
 ## Reference
 - [EPPlus SampleApp](https://github.com/JanKallman/EPPlus/tree/master/SampleApp)
