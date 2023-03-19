@@ -27,5 +27,9 @@ ChatGPTに対して設定を伝えると、そのようにふるまってくれ�
 - Pythonエンジニアとしてふるまってほしい
 - あなたは私の専属のコーチです
 
+## ChatGPTに、ChatGPTが使用するプロンプトを作らせる
+
+ChatGPT自体にプロンプトを書いてもらうことで、プロンプトの改善を重ねることができる
+
 ## Reference
 - [chatGPT](https://chat.openai.com/chat)
