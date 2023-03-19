@@ -26,3 +26,6 @@ ChatGPTに対して設定を伝えると、そのようにふるまってくれ�
 
 - Pythonエンジニアとしてふるまってほしい
 - あなたは私の専属のコーチです
+
+## Reference
+- [chatGPT](https://chat.openai.com/chat)
