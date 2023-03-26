@@ -10,10 +10,11 @@ tags:
 
 ## Install
 
-プロジェクトにMicrosoft.Extensions.Loggingパッケージを追加
-
+プロジェクトに`Microsoft.Extensions.Logging`パッケージを追加
+`Microsoft.Extensions.Logging.Console`パッケージを追加
 ```
 dotnet add package Microsoft.Extensions.Logging
+dotnet add package Microsoft.Extensions.Logging.Console
 ```
 
 ## Usage
@@ -59,6 +60,7 @@ public void MyMethod()
 
 ```cs
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 public static class Program
 {
