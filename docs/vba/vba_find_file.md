@@ -63,4 +63,4 @@ End Sub
 ```
 
 ## Reference
-- []
+- [GetFolder メソッド](https://learn.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/getfolder-method)
