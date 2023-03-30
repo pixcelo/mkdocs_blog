@@ -38,8 +38,10 @@ P(A|B) = P(B|A) * P(A) / P(B)
 ```cs
 using System;
 
-class Program {
-    static void Main(string[] args) {
+class Program
+{
+    static void Main()
+    {
         // 事象Aと事象Bの確率を設定する
         double probabilityA = 0.3;
         double probabilityB = 0.5;
