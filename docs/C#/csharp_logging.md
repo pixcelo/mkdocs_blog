@@ -88,3 +88,4 @@ public static class Program
 ## Reference
 - [C# と .NET でのログ記録](https://learn.microsoft.com/ja-jp/dotnet/core/extensions/logging?tabs=command-line)  
 - [.NET Core および ASP.NET Core でのログ記録](https://learn.microsoft.com/ja-jp/aspnet/core/fundamentals/logging/?view=aspnetcore-6.0)
+- [GitHub Microsoft.Extensions.Logging](https://github.com/dotnet/runtime/tree/main/src/libraries/Microsoft.Extensions.Logging)
