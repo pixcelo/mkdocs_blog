@@ -5,7 +5,7 @@ tags:
 
 # C# chatGPTのAPIを叩く
 
-## API
+## API発行
 
 - APIキー発行
 
