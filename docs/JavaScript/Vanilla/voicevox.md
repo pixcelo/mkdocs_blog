@@ -3,13 +3,22 @@ tags:
   - JavaScript
 ---
 
-## voicevox 
+## voicevox でchatGPTの回答を音声に変換する
 
-```js
-const 
+- chatGPT API 
+- voicevox API
+
+## Overview
+
+- chatGPTと子どもが音声で簡単に会話できるようにする
+- スペースキーを押したときだけ、音声入力を受け付ける
+
+```html
 ```
 
-
+```js
+ 
+```
 
 
 ## Reference
