@@ -1,6 +1,7 @@
 ---
 tags:
   - Python
+  - 環境構築
 ---
 
 # Python venvで仮想環境の構築
