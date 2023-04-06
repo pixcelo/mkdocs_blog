@@ -33,4 +33,4 @@ for /r "%target_folder%" /d %%d in (*) do (
 ```
 
 ## Reference
-- [コマンド](https://learn.microsoft.com/ja-jp/windows-server/administration/windows-commands/for)
+- [Windows のコマンド](https://learn.microsoft.com/ja-jp/windows-server/administration/windows-commands/windows-commands)
