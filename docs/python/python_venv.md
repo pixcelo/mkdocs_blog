@@ -69,8 +69,8 @@ deactivate
 [Ll]ib
 [Ll]ib64
 [Ll]ocal
-[Ss]cripts
 pyvenv.cfg
+[Ss]cripts
 .venv
 pip-selfcheck.json
 
