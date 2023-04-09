@@ -3,7 +3,7 @@ tags:
   - ブログ
 ---
 
-# Python Stable Diffusionの使い方
+# Stable Diffusionの使い方
 
 - `Stable Diffusion`とはテキストから画像を生成するAIサービス
 - 自然言語によるテキストでの指示（プロンプト）を使用して画像を生成する
