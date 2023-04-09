@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python
+  - ブログ
 ---
 
 # Python Stable Diffusionの使い方
