@@ -9,7 +9,10 @@ tags:
 - 自然言語によるテキストでの指示（プロンプト）を使用して画像を生成する
 - 無料・商用利用が可能
 
-競合サービスとして、chatGPTのopenaiが開発元の[DALL・E2](https://openai.com/product/dall-e-2)などがある
+他にも競合サービスとして、他にも以下のものがある
+- [DALL・E2](https://openai.com/product/dall-e-2)
+- [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F)
+- [nightcafe](https://nightcafe.studio/)
 
 ## 環境
 
