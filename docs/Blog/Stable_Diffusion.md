@@ -37,6 +37,9 @@ tags:
 - 思い通りの画像を生成するには、プロントにも工夫が必要
 - プロンプトを検索するサービス[Lexica](https://lexica.art/)などを利用する
 
+プロンプトを検索するサイトがある
+- [PromptHero](https://prompthero.com/)
+
 ### プロンプトのコツ
 
 左側にあるものほど優先される
@@ -44,6 +47,7 @@ tags:
 ポジティブプロンプト
 ネガティブプロンプト
 モデルデータ
+
 
 ## Reference
 - [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
