@@ -9,7 +9,7 @@ tags:
 pip install selenium
 ```
 
-## 
+## Usage 
 ```py
 from selenium import webdriver
 
