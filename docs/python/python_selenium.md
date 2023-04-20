@@ -26,7 +26,13 @@ driver = webdriver.Edge(executable_path=edge_driver_path, options=edge_options)
 # Webページを開く
 driver.get('https://www.google.com')
 ```
+### 要素の取得
+
+```py
+
+```
 
 ## Reference
 - [selenium](https://www.selenium.dev/)
 - [microsoft-edge webdriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
+- [locating-elements](https://kurozumi.github.io/selenium-python/locating-elements.html)
