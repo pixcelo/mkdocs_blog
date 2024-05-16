@@ -1,3 +1,0 @@
-ogcとは
-
-city gmlとは
