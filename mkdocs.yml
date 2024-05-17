@@ -8,10 +8,12 @@ theme:
   # Color
   palette:
       scheme: slate
-      primary: teal
-      accent: gray
+      primary: indigo
+      accent: indigo
   features:
     - content.code.annotate
+  font:
+    text: Noto Sans
 
 markdown_extensions:
   - pymdownx.highlight:
