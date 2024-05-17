@@ -31,6 +31,12 @@ extra:
     property: G-W7KQBBZSKT
   search:
     language: 'jp'
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/te_tsk
+      name: te.k on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/pixcelo
 
 plugins:
   - tags
