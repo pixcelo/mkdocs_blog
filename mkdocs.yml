@@ -42,7 +42,7 @@ extra:
 
 plugins:
   - tags
-    tags_file: tags.md
+      tags_file: tags.md
   - search:
       lang:
         - en
