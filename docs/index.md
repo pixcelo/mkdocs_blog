@@ -18,6 +18,6 @@
 
 ## Site
 - [GitHub](https://github.com/pixcelo)
-- [Gist](https://gist.github.com/pixcelo)
 - [Qiita](https://qiita.com/te-k)
 - [Twitter](https://twitter.com/te_tsk)
+- [ブクログ](https://booklog.jp/users/tekcs)

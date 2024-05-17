@@ -8,7 +8,7 @@ theme:
   # Color
   palette:
       scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
   features:
     - content.code.annotate
@@ -42,6 +42,7 @@ extra:
 
 plugins:
   - tags
+    tags_file: tags.md
   - search:
       lang:
         - en
