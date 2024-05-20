@@ -21,7 +21,7 @@ tags:
 ## サブドメインを作成
 まずXServerの管理画面にログインして、サーバーパネルからサブドメイン設定を開く
 
-<img width="50%" src="./img/xserver_server_panel.png">
+![server_panel](img/xserver_server_panel.png)
 
 [サブドメイン設定追加]でサブドメインを入力し、設定する（※反映まで少し時間がかかる）
 
@@ -31,13 +31,13 @@ tags:
 事前に[SSH設定](https://www.xserver.ne.jp/manual/man_server_ssh.php)を行う<br />
 サーバーID、公開鍵認証用鍵ペアの生成に使用したパスフレーズが必要となる為、控えておく
 
-<img width="40%" src="./img/xserver_ssh_setting.png">
+![ssh_setting](img/xserver_ssh_setting.png)
 
 ログインには`Tera Term`を使用する（インストールは[プロジェクトページ](https://teratermproject.github.io/)から）
 
 `Tera Term`の接続方法は、[公式ドキュメント](https://www.xserver.ne.jp/manual/man_server_ssh_connect_tera.php)が詳しいので割愛<br />
 
-<img width="30%" src="./img/xserverr_teraterm_new_connection.png">
+![teraterm_new_connection](img/xserverr_teraterm_new_connection.png)
 
 ログインに成功すると、以下のようにターミナル（黒い画面）が表示される
 
@@ -115,8 +115,8 @@ $ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 この段階で`dotnet`を実行するとエラーとなる
 ```bash
 $ dotnet
-dotnet: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (requ
-dotnet: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (requ
+dotnet: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by dotnet)
+dotnet: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by dotnet)
 ```
 
 これは、dotnetランタイムが必要としているライブラリ`Glibc`のバージョンが古いことが原因で発生している<br />
@@ -134,6 +134,19 @@ ldd (GNU libc) 2.17
 ```bash
 $ rpm -q glibc
 glibc-2.17-326.el7_9.x86_64
+```
+
+### Glibcのアップデート
+
+作業用ディレクトリ作成
+```bash
+$ mkdir -p tmp/glibc
+```
+
+※工事中
+```bash
+$ cd tmp/glibc
+$ wget --no-check-certificate https://ftp.gnu.org/gnu/glibc/glibc-3.4.21.tar.gz
 ```
 
 
