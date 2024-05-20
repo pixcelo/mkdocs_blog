@@ -41,6 +41,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/pixcelo
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - tags:
       tags_file: tags.md
