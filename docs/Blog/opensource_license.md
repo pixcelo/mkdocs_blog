@@ -32,9 +32,32 @@ Apache ライセンス `Apache License`
 
 ## LGPL
 
-`GNU Lesser General Public License`
+LGPLライセンスは、GNU General Public License（GPL）をベースとしたフリーソフトウェアライセンス
+
+主に、ライブラリなどのソフトウェア部品に適用される
+
+- ソースコード公開: ライブラリを利用するソフトウェアは、ソースコードを公開する必要はない
+- 継承性: ライブラリを改変して再配布する場合、その部分のソースコードを公開する必要がある
+- 互換性: GPLライセンスと互換性があり、GPLライセンスのソフトウェアと組み合わせることがでる
+
+LGPLライセンスは、ライブラリの開発者が、利用者に対してソースコード公開を強制せずに、<br />
+ソフトウェアの自由な利用と改変を認めることを可能にするライセンス
+
+## GNU
+GNUライセンスとは、ソフトウェアの自由な利用、改変、再配布を保証するライセンス
+
+代表的なオープンソースライセンスの一つで、以下の点が特徴
+
+- 自由: ソフトウェアの利用、改変、再配布が自由に行える
+- ソースコード公開: ソフトウェアのソースコードを公開する必要がある
+- 継承性: 改変・再配布したソフトウェアも、GNUライセンスの条件を継承する必要がある（コピーレフト）
+
+GNUライセンスは、ユーザーの自由を最大限に尊重し、ソフトウェアの共有と発展を促進することを目的としている
+
+Linuxカーネルをはじめ、多くのオープンソースソフトウェアで採用されている
 
 ## Reference
-[Open Source Initiative](https://opensource.org/)<br>
-[The MIT License](https://opensource.org/licenses/MIT)<br>
-[Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)<br>
+- [Open Source Initiative](https://opensource.org/)
+- [The MIT License](https://opensource.org/licenses/MIT)
+- [Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)
+- [GNU](https://www.gnu.org/gnu/gnu.html)
