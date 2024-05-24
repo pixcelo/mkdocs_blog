@@ -9,8 +9,6 @@ tags:
 
 GAS（Google Apps Script）は、通常 Apps Scriptのエディターを用いて開発する
 
-<img width="500px" src="img/gas_editor.png">
-
 これでも開発は可能だが、やはり「いつもの使い慣れた環境で開発したい！」という人は<br />
 `clasp`を使うと幸せになれる
 
