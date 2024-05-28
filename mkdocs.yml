@@ -12,13 +12,16 @@ theme:
       accent: indigo
   features:
     - content.code.annotate
+    - navigation.top
   font:
     text: Noto Sans
 
 markdown_extensions:
+  - attr_list
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
