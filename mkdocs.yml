@@ -14,7 +14,7 @@ theme:
     - content.code.annotate
     - navigation.top
   font:
-    text: Noto Sans
+    text: Noto Sans Japanese
 
 markdown_extensions:
   - attr_list
