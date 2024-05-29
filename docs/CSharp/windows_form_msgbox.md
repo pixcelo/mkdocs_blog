@@ -1,12 +1,12 @@
 ---
 tags:
   - C#
-  - Windowsフォーム
+  - WindowsForm
 ---
 
-# C# Windowsフォーム メッセージボックスを表示する
+# C# WindowsForm メッセージボックスを表示する
 
-C# Windowsフォームでメッセージボックスのポップアップを表示する方法
+C# WindowsFormでメッセージボックスのポップアップを表示する方法
 
 ## Usage
 

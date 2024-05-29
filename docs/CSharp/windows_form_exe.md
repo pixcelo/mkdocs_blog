@@ -1,10 +1,10 @@
 ---
 tags:
   - C#
-  - Windowsフォーム
+  - WindowsForm
 ---
 
-# C# Windowsフォームでexeファイルを作成する（ビルド）
+# C# WindowsFormでexeファイルを作成する（ビルド）
 
 メニューの「Debug」を「Release」に変更する
 

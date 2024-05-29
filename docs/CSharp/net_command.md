@@ -1,3 +1,9 @@
+---
+tags:
+  - .NET
+  - CLI
+---
+
 # .NETのコマンドを使用してVSコードでプロジェクトを作成する
 Macで`.NET`の開発がしたい<br>
 だが visual studio for mac は使いにくい (windows版と色々と仕様が異なる)<br><br>
