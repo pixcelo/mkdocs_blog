@@ -2,7 +2,7 @@
 tags:
   - ブログ
   - デプロイ
-  - ASP.NET
+  - .NET
   - Linux
   - CentOS
 ---
