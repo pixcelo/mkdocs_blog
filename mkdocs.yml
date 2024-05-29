@@ -12,6 +12,8 @@ theme:
       accent: indigo
   features:
     - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - navigation.top
   font:
     text: Noto Sans Japanese
@@ -21,6 +23,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
