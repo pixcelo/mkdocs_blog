@@ -1,7 +1,7 @@
 ---
 tags:
   - C#
-  - MVC
+  - .NET
 ---
 
 # C# ASP.NET MVC でページを分割して作成する部分ビュー
