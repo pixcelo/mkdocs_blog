@@ -25,7 +25,7 @@ localhost/:1  Access to fetch at 'https://localhost:7148/weatherforecast' from o
 
 ## .NETでCORSをミドルウェア経由で有効にする
 規定のポリシーによるミドルウェアのCORS有効化
-```cs
+```cs title="Program.cs"
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
