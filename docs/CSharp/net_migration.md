@@ -192,3 +192,4 @@ SELECT * FROM sys.objects WHERE type = 'U';
 
 ## Reference
 - [移行の管理](https://learn.microsoft.com/ja-jp/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli)
+- [データベースプロバイダー](https://learn.microsoft.com/ja-jp/ef/core/providers/?source=recommendations&tabs=dotnet-core-cli)
