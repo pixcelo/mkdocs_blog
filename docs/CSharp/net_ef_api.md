@@ -18,8 +18,7 @@ tags:
 
 ## Reference
 - [ASP.NET Core を使用した Web API](https://dotnet.microsoft.com/ja-jp/apps/aspnet/apis)
-
-
+- [ASP.NET Web API 2 での属性ルーティング](https://learn.microsoft.com/ja-jp/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#prefixes)
 
 Web API のテストに使えるサイト？
 - [math.js](https://mathjs.org/)
