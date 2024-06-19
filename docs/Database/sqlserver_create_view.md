@@ -49,6 +49,15 @@ FROM
 LEFT JOIN dbo.m_group ON dbo.student.no_group = dbo.m_group.no_group
 ```
 
+変更する場合は、`ALTER VIEW`を使用する
+
+```sql
+ALTER VIEW V_SampleView
+AS
+SELECT
+...
+```
 
 ## Reference
 - [CREATE VIEW (Transact-SQL)](https://learn.microsoft.com/ja-jp/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver16)
+- [ALTER VIEW (Transact-SQL)](https://learn.microsoft.com/ja-jp/sql/t-sql/statements/alter-view-transact-sql?view=sql-server-ver16)
