@@ -2,7 +2,7 @@
 tags:
   - C#
   - SQLServer
-  - Windowsフォーム
+  - WindowsForm
 ---
 
 # C# データベース（SQLServer）に接続する
