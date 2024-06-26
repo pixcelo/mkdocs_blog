@@ -1,6 +1,7 @@
 ---
 tags:
   - Python
+  - selenium
 ---
 # Python selenium を使用する最小単位の構成
 
@@ -25,11 +26,6 @@ driver = webdriver.Edge(executable_path=edge_driver_path, options=edge_options)
 
 # Webページを開く
 driver.get('https://www.google.com')
-```
-### 要素の取得
-
-```py
-
 ```
 
 ## 要素が取得できない時の原因
