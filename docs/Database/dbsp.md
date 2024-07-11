@@ -21,5 +21,6 @@ tags:
 [Udemy 情報処理技術者試験コース](https://www.udemy.com/topic/information-technology-engineers-exam/)
 
 ## Reference
+- [試験情報 データベーススペシャリスト試験](https://www.ipa.go.jp/shiken/kubun/db.html)
 - [データベーススペシャリスト試験 動画 ITのプロ46](https://www.youtube.com/watch?v=Muuhtm8vQkY&list=PL53uwBjWE-t4PAa6xdjUZVn-XOQHc6JXn)
 - [データベーススペシャリスト2021年板 正誤表](https://www.shoeisha.co.jp/book/detail/9784798167770)
