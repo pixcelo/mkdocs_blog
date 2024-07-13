@@ -46,6 +46,32 @@ private void ng_pointButton_Click(object sender, EventArgs e)
 
 ## ファクトリーメソッドによる拡張
 
+ポイントクラスは、インターフェイスで拡張する
+
+```mermaid
+classDiagram
+    IPoint <|-- Point
+    IPoint <|-- GoldPoint
+    IPoint <|-- SilverPoint
+
+    class IPoint{
+      <<interface>>
+      +GetPoint()
+    }
+
+    class Point{
+      +GetPoint()
+    }
+
+    class GoldPoint{
+      +GetPoint()
+    }
+    
+    class SilverPoint{
+      +GetPoint()
+    }
+```
+
 拡張する場合は、生成のみを責務とした`Factory`と、クラスを追加するだけでOK
 
 ファクトリー
