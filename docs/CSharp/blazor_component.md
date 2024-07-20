@@ -70,5 +70,17 @@ Welcome to your new app.
 <Counter IncrementAmount="10" />
 ```
 
+## `@pabe` ディレクティブ
+Blazor へのルート テンプレートを提供する<br />
+`@page "/example"` とすると https://domain.com/example にルーティングされる
+
+## `@code` ディレクティブ
+次のブロック内のテキストが C# コードであることを宣言する
+
+## メンバー アクセス ディレクティブ
+レンダリング ロジックにメンバーの値を含める場合は、@ 記号の後に、メンバーの名前などの C# 式を指定<br />
+つまり、`@code`ディレクティブ内に記述したプライベート変数をレンダリングできる
+
 ## Reference
 - [ASP.NET Core Razor コンポーネント](https://learn.microsoft.com/ja-jp/aspnet/core/blazor/components/?view=aspnetcore-8.0&source=recommendations)
+- [MicrosoftDocs / mslearn-interact-with-data-blazor-web-apps](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps)
