@@ -68,7 +68,66 @@ tags:
 アーキテクチャレベルにおいて、**機能分割**がベストプラクティスであり、<br />
 証明可能な小さな機能が正しくないことを証明できない場合、その機能は十分に正しいとみなせる
 
+## オブジェクト指向プログラミング
 
+優れたアーキテクチャの基本となるのは「オブジェクト指向設計」
+
+ポリモーフィズムを使用することで、システムにあるすべてのソースコードの依存関係を絶対的に制御する能力
+
+### ポリモーフィズムのメリット
+
+プラグインアーキテクチャを実現できる<br />
+→ 呼び出し元は、呼び出し先の詳細を知らなくても使用することができる
+
+### 依存関係逆転
+
+NG：高レベルのモジュール `OrderService` があり、それが低レベルのモジュール `EmailSender` に依存
+```mermaid
+classDiagram
+    OrderService --> EmailSender
+    class OrderService{
+        +EmailSender emailSender
+        +ProcessOrder(order: string)
+    }
+    class EmailSender{
+        +SendEmail(message: string)
+    }
+```
+<br />
+
+OK：`OrderService` は `IEmailSender` インターフェースに依存するように変更 <br />
+制御の流れと依存関係が逆転され、「依存関係逆転の原則」が適用できている状態
+```mermaid
+classDiagram
+    OrderService --> IEmailSender
+    EmailSender ..> IEmailSender
+    class OrderService{
+        +IEmailSender emailSender
+        +ProcessOrder(order: string)
+    }
+    class IEmailSender{
+        +SendEmail(message: string)
+    }
+    class EmailSender{
+        +SendEmail(message: string)
+    }
+```
+<br />
+<br />
+
+ソフトウェアアーキテクトは、ビジネスロジックが画面やDBに依存しないようにポリモーフィズムを使って依存関係をコントロールできる
+```mermaid
+graph TD
+    UI --> BusinessLogic
+    Database --> BusinessLogic
+    BusinessLogic -.-> UI
+    BusinessLogic -.-> Database
+```
+ビジネスロジックだけを独立させデプロイすることも可能となる（画面、データベースの変更に影響を受けない）
+<br />
+
+ポリモーフィズムがオブジェクト指向プログラミングの要<br />
+→ 上位レベルの方針を含んだモジュールを、下位レベルの詳細を含んだモジュールから独立させることができる
 
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
