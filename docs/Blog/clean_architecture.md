@@ -259,6 +259,34 @@ Business Logic -> Controller -> Presenter -> View
 - システムをコンポーネントに分割し、コンポーネントの依存関係を階層構造にする
 - 上位レベルのコンポーネントが下位レベルのコンポーネントの影響を受けないようにする
 
+### LSP: リスコフの置換原則
+
+インターフェイスと実装に関するソフトウェア設計の原則
+
+`Bulling`は、使っている2つの派生型に依存せず、リスコフの置換原則を満たす設計になっている<br />
+2つの派生型は、どちらも`License`型に置き換えることができる
+
+```mermaid
+classDiagram
+    Billing --> ILicense
+    PersonalLincense ..> ILicense
+    BusinessLicense ..> ILicense
+
+    class ILicense{
+        +CalcFee()        
+    }
+    class Billing{        
+    }
+    class PersonalLincense{
+    }
+    class BusinessLicense{
+        -users()
+    }
+```
+
+クラスのインターフェイスでも、RESTのURIによるインターフェイスでも様々なところで適用できる原則<br />
+置換可能性に少しでも違反すると、複雑になる（if文、不具合の増加）
+
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [実装クリーンアーキテクチャ](https://qiita.com/nrslib/items/a5f902c4defc83bd46b8)
