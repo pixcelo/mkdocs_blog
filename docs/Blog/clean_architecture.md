@@ -287,6 +287,56 @@ classDiagram
 クラスのインターフェイスでも、RESTのURIによるインターフェイスでも様々なところで適用できる原則<br />
 置換可能性に少しでも違反すると、複雑になる（if文、不具合の増加）
 
+### ISP: インターフェイス分離の原則
+
+NG：User1クラスは、実際には使っていないop2・op2に意図せず依存している<br />
+（使用しているクラスに再コンパイル・再デプロイが発生する）
+```mermaid
+classDiagram
+    User1 --> OPS
+    User2 --> OPS
+    User3 --> OPS
+
+    class OPS{
+        +op1()
+        +op2()
+        +op3()
+    }
+    class User1{
+    }
+    class User2{
+    }
+    class User3{
+    }
+```
+
+OK：インターフェイスに分離すれば、User1の再コンパイル・再デプロイは不要になる
+```mermaid
+classDiagram
+    User1 --> IU1Ops
+    User2 --> IU2Ops
+    User3 --> IU3Ops
+
+    IU1Ops --> OPS
+    IU2Ops --> OPS
+    IU3Ops --> OPS
+
+    class OPS{
+        +op1()
+        +op2()
+        +op3()
+    }
+    class User1{
+    }
+    class User2{
+    }
+    class User3{
+    }
+```
+
+必要としないお荷物を抱えたものに依存していると、予期せぬトラブルの元につながる<br />
+「分離せよ」
+
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [実装クリーンアーキテクチャ](https://qiita.com/nrslib/items/a5f902c4defc83bd46b8)
