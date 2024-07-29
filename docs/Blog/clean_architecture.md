@@ -353,7 +353,17 @@ JavaやC#などの静的型付け言語なら、参照先をインターフェ�
 
 Abstract Factory パターンによる実装
 
-TODO: ここに図を入れる
+```mermaid
+classDiagram
+    Application --> IService
+    Application --> IServiceFactory
+    IServiceFactory ..> IService
+
+    ServiceFactory --> IServiceFactory
+    ServiceFactory --> IConcrete
+    IConcrete --> IService
+```
+
 
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
