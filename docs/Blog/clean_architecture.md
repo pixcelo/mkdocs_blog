@@ -363,7 +363,15 @@ classDiagram
     ServiceFactory --> IConcrete
     IConcrete --> IService
 ```
+## コンポーネントの原則
 
+### コンポーネント
+コンポーネントとは、デプロイ単位のこと（システムの一部としてデプロイできる最小限のまとまり）
+→ .NET ならdll
+
+動的にリンクされたファイルを実行時にプラグインできるもの
+
+### コンポーネントの凝集性
 
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
