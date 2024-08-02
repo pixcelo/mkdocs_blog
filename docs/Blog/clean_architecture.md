@@ -393,7 +393,14 @@ classDiagram
 
 「変更の種類が似ているクラスをひとつのコンポーネントにまとめる」
 
+#### 全再利用の原則（CRP）
 
+「コンポーネントのユーザーに対して、実際に使わないものへの依存を強要してはいけない」
+
+依存関係のない、不要なクラスは同じコンポーネントに含めるべきではない<br />
+→ インターフェイス分離の原則（ISP）をコンポーネントレベルで適用したもの
+
+「不要なものには依存しないこと」
 
 ## Reference
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
